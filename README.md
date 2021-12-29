@@ -36,3 +36,12 @@ For this project I have decided to build an e-commerce site based around my dads
      2. the purpose of the site to be clear to the user.
      3. to add a product easily on the site.
      4. to edit or delete any of the existing products on the site.
+
+
+### Design
+
+* #### Wireframes
+
+  To create my wireframes I used balsamiq. I have done a design for both large and smaller screens to show how the layout of the site will change accordingly with different screen sizes. The links to the wireframes are below. <br>
+  * [Large screens](https://github.com/Ashb87/Ms4-island-furniture/blob/main/assets/wireframes/island-furniture-lg-wireframe.png)
+  * [Smaller screens](https://github.com/Ashb87/Ms4-island-furniture/blob/main/assets/wireframes/island-furniture-small-wireframe.png) 
