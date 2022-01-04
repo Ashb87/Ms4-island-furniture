@@ -3,15 +3,37 @@ html {
 }
 
 body {
-    background: url('/media/home-pic.jpg') no-repeat center center fixed;
-    background-size: cover;
-    height: calc(100vh - 164px);
+    background-color: #e7ebe8;
+    /*height: calc(100vh - 164px);*/
     color: #555;
     font-family: 'Lato';
 }
 
+.hero-img{
+    height: 500px;
+    background: url('/media/home-pic.jpg');
+    background-size: cover;
+    background-position: center center;
+    box-shadow: inset 0 0 7em 0 rgb(0 0 0 / 80%);
+    margin: 0;
+    padding: 0;
+}
+
+/* Navbar */
 .fixed-top {
-    background-color: #346a40;
+    background-color: #e7ebe8;
+}
+
+ul {
+    padding-inline-start: 0;
+}
+
+.logo-font {
+    text-transform: uppercase;
+}
+
+.main-logo-link {
+    width: fit-content;
 }
 
 /* from Bulma */
@@ -21,14 +43,6 @@ body {
     justify-content: center;
     height: 1.5rem;
     width: 1.5rem;
-}
-
-.logo-font {
-    text-transform: uppercase;
-}
-
-.main-logo-link {
-    width: fit-content;
 }
 
 /* buttons */
