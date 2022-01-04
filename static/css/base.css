@@ -53,6 +53,11 @@ body {
     color: white;
 }
 
+a.category-badge > span.badge:hover {
+    background: #212529 !important;
+    color: #fff !important;
+}
+
 .text-black {
     color: #000 !important;
 }
