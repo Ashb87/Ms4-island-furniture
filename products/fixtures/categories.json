@@ -44,7 +44,7 @@
         "model": "products.category",
         "fields": {
             "name": "jeans",
-            "friendly_name": "Jeans"
+            "friendly_name": "jeans"
         }
     },
     {
@@ -61,14 +61,6 @@
         "fields": {
             "name": "new_arrivals",
             "friendly_name": "New Arrivals"
-        }
-    },
-    {
-        "pk": 9,
-        "model": "products.category",
-        "fields": {
-            "name": "shirts",
-            "friendly_name": "Shirts"
         }
     }
 ]
