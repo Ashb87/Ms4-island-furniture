@@ -31,7 +31,7 @@ def bag_contents(request):
                     'product': product,
                     'color': color,
                 })
-
+    
     if total < settings.FREE_DELIVERY_THRESHOLD:
         delivery = settings.STANDARD_DELIVERY
         free_delivery_delta = settings.FREE_DELIVERY_THRESHOLD - total
