@@ -3,7 +3,7 @@ html {
 }
 
 body {
-    background-color: #faf5f5;
+    background-color: #f7f7ff;
     /*height: calc(100vh - 164px);*/
     color: #555;
     font-family: 'Lato';
@@ -21,7 +21,7 @@ body {
 
 /* Navbar */
 .fixed-top {
-    background-color: #faf5f5;
+    background-color: #f7f7ff;
 }
 
 .nav-link {
