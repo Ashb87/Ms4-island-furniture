@@ -3,11 +3,10 @@
        "pk":1,
        "model":"products.product",
        "fields":{
-          "sku":"pp5001340155",
-          "name":"Arizona Original Bootcut Jeans",
-          "description":"Bootcut jeans in our just-right original fit are comfortable and look great too.  5-pocket style sits below waist straight fit through seat and thigh bootcut leg 18\" leg opening cotton washable imported extended sizes and washes available online only",
-          "price":53.99,
-          "category":6,
+          "name":"Kitchen Island",
+          "description":"Kitchen island, blah blah blah",
+          "price":695.00,
+          "category":1,
           "rating":4.6,
           "image_url":"",
           "image":""
@@ -17,25 +16,23 @@
        "pk":2,
        "model":"products.product",
        "fields":{
-          "sku":"pp5001600425",
-          "name":"Liz Claiborne Audra Classic Fit Straight Leg Pants",
-          "description":"Straight-leg styling and on-the-job comfort make our Audra pants a flattering business decision. flat front zip fly with hook-and-bar closure 2 front and 2 back welt pockets 34 1/2\" inseam polyester/rayon/spandex washable imported",
-          "price":58.99,
-          "category":4,
+          "name":"Bench Table",
+          "description":"Awesome table and bench seating",
+          "price":450.00,
+          "category":2,
           "rating":4.6,
-          "image_url":"http://s7d9.scene7.com/is/image/JCPenney/DP0113201617034987M.tif?hei=380&amp;wid=380&op_usm=.4,.8,0,0&resmode=sharp2&op_usm=1.5,.8,0,0&resmode=sharp",
-          "image":"DP0113201617034987M.jpg"
+          "image_url":"",
+          "image":""
        }
     },
     {
        "pk":3,
        "model":"products.product",
        "fields":{
-          "sku":"pp5001730010",
-          "name":"Royal Velvet Matte Satin Square 3-pc. Coverlet Set",
-          "description":"Add a 5-star resort feel to your bedroom with the elegant Matte Satin Square coverlet set, featuring modern embroidered squares and flanged trim.  square embroidered pattern flanged-edge trim fabric is washable for easy care 3-piece set includes: coverlet 2 shams Polyester coverlet with cotton fill; polyester shams. Washable. Imported. Full/Queen: coverlet is 92x96\" King: coverlet is 110x96\"",
+          "name":"Tv Unit",
+          "description":"Wicked cool tv unit",
           "price":205.99,
-          "category":2,
+          "category":3,
           "rating":4.7,
           "image_url":"http://s7d9.scene7.com/is/image/JCPenney/DP1230201417013175M.tif?hei=380&amp;wid=380&op_usm=.4,.8,0,0&resmode=sharp2&op_usm=1.5,.8,0,0&resmode=sharp",
           "image":"DP1230201417013175M.jpg"
@@ -45,12 +42,11 @@
        "pk":4,
        "model":"products.product",
        "fields":{
-          "sku":"pp5001890157",
-          "name":"Gibson Infinite Glaze 16-pc. Dinnerware Set",
-          "description":"An exhibition in contrast, this dinnerware sets simple, clean design is perfect for both everyday use and special occasions. durable stoneware construction microwave and oven safe service for 4 16-piece set includes: four 10\" dinner plates four 7\" dessert plates four 6\" bowls four 12-ounce mugs Stoneware. Dishwasher safe. Imported.",
+          "name":"Display cabinet",
+          "description":"Display cabinet with storage cupboard",
           "price":169.99,
-          "category":7,
-          "rating":3.0,
+          "category":4,
+          "rating":4.0,
           "image_url":"http://s7d9.scene7.com/is/image/JCPenney/DP0716201503423610M.tif?hei=380&amp;wid=380&op_usm=.4,.8,0,0&resmode=sharp2&op_usm=1.5,.8,0,0&resmode=sharp",
           "image":"DP0716201503423610M.jpg"
        }
@@ -59,11 +55,10 @@
        "pk":5,
        "model":"products.product",
        "fields":{
-          "sku":"pp5002111605",
-          "name":"Simply Calphalon Enameled Cast Iron Panini Pan",
-          "description":"Durable enameled cast iron construction allows the panini pan to heat evenly, so you can whip up a meal with ease and complete confidence.  cooks with little to no oils or fats so every recipe is healthier nonstick interior for quick and easy clean-ups stainless steel knob on cover enameled cast iron heats evenly and consistently stove, broiler and oven safe Cast iron/stainless steel. Dishwasher safe. Imported. ",
-          "price":232.99,
-          "category":7,
+          "name":"Storage cabinet",
+          "description":"Storage cabinet with shelves",
+          "price":300.00,
+          "category":5,
           "rating":5.0,
           "image_url":"http://s7d9.scene7.com/is/image/JCPenney/DP1115201210371197C.tif?hei=380&amp;wid=380&op_usm=.4,.8,0,0&resmode=sharp2&op_usm=1.5,.8,0,0&resmode=sharp",
           "image":"DP1115201210371197C.jpg"
@@ -73,11 +68,10 @@
        "pk":6,
        "model":"products.product",
        "fields":{
-          "sku":"pp5002260206",
-          "name":"The Foundry Supply Co. Solid Pocket TeeBig & Tall",
-          "description":"Get a better basic tee in a size that truly fits with this pocket t-shirt from The Foundry Supply Co.  short-sleeve, crew-neck tee left chest pocket 100% cotton washable imported",
-          "price":30.99,
-          "category":7,
+          "name":"3 tier display unit",
+          "description":"Large display unit for shop",
+          "price":400.00,
+          "category":6,
           "rating":4.7,
           "image_url":"http://s7d9.scene7.com/is/image/JCPenney/DP0624201520422666C.tif?hei=380&amp;wid=380&op_usm=.4,.8,0,0&resmode=sharp2&op_usm=1.5,.8,0,0&resmode=sharp",
           "image":"DP0624201520422666C.jpg"
@@ -87,11 +81,10 @@
        "pk":7,
        "model":"products.product",
        "fields":{
-          "sku":"pp5002440521",
-          "name":"Liz Claiborne Classic Sophie Secretly Slender Trouser Leg Pants - Plus",
-          "description":"Walk a little taller in our slimming straight-leg pants. flat front slim fit straight leg front fly with nylon zipper, hook and bar closure 32\" inseam polyester/rayon/spandex washable imported ",
+          "name":"wall display unit",
+          "description":"Two tier wall display unit",
           "price":59.0,
-          "category":4,
+          "category":7,
           "rating":4.4,
           "image_url":"http://s7d9.scene7.com/is/image/JCPenney/DP0226201317034754M.tif?hei=380&amp;wid=380&op_usm=.4,.8,0,0&resmode=sharp2&op_usm=1.5,.8,0,0&resmode=sharp",
           "image":"DP0226201317034754M.jpg"
@@ -101,11 +94,10 @@
        "pk":8,
        "model":"products.product",
        "fields":{
-          "sku":"pp5002601115",
-          "name":"Rachael Ray Ceramic Olive Oil Dispenser",
-          "description":"This olive oil dispenser is designed for storing extra virgin olive oil, so it's close at hand for drizzling on food.  24-ounce capacity cruet opaque bottle and non-porous glazed interior keep oil in the dark to avoid oxidation and preserve taste playful, contemporary design Stoneware. Dishwasher-safe. Imported.",
-          "price":36.99,
-          "category":7,
+          "name":"Kitchen sink unit",
+          "description":"Large kitchen unit with sink",
+          "price":675.00,
+          "category":1,
           "rating":4.5,
           "image_url":"http://s7d2.scene7.com/is/image/JCPenney/DP0926201317071162M.tif?wid=65&hei=65&fmt=jpg&op_usm=.4,.8,0,0&resmode=sharp2",
           "image":"DP0926201317071162M.jpg"
@@ -115,11 +107,10 @@
        "pk":9,
        "model":"products.product",
        "fields":{
-          "sku":"pp5002690715",
-          "name":"Protech Performance Sheet Set",
-          "description":"Protech sheets are like activewear for your bed! The same cutting edge technology that is used in today's sportswear is also used in these Protech Plus sheets to give you a better night's sleep. Breathable ultra-fine microfiber wicks away moisture, keeping your body cool throughout the night while a 4-way stretch component allows you comfort in movement. This stretching ability also helps while making the bed, fitting most premium size mattresses; you won't have to struggle to get the sheets to fit all the way around.  4-way stretch component allows you comfort in movement available in a variety of solid colors microfiber knit fits mattresses up to 19\" deep Set includes: fitted sheet flat sheet 2 pillowcases Polyester/spandex. Washable. Imported. Full: 54x75 Queen: 60x80 King: 78x80 Cal. King: 72x84",
-          "price":169.99,
-          "category":2,
+          "name":"Coffee table",
+          "description":"Coffee table with steel legs",
+          "price":300.00,
+          "category":3,
           "rating":4.7,
           "image_url":"http://s7d2.scene7.com/is/image/JCPenney/DP1020201517025390M.tif?wid=65&hei=65&fmt=jpg&op_usm=.4,.8,0,0&resmode=sharp2",
           "image":"DP1020201517025390M.jpg"
@@ -129,11 +120,10 @@
        "pk":10,
        "model":"products.product",
        "fields":{
-          "sku":"pp5002701115",
-          "name":"Reflections Set of 4 Microfiber Napkins",
-          "description":"Complete the look of your table setting with these easy-care microfiber napkins.  great for everyday use or entertaining liquid-resistant design helps protect against spills set of 4 Polyester.Each measures 19x19\". Washable. Imported.",
-          "price":33.99,
-          "category":7,
+          "name":"Oak Dining Table",
+          "description":"Solid oak dining table",
+          "price":600.00,
+          "category":2,
           "rating":4.4,
           "image_url":"http://s7d2.scene7.com/is/image/JCPenney/DP0418201317011949M.tif?wid=65&hei=65&fmt=jpg&op_usm=.4,.8,0,0&resmode=sharp2",
           "image":"DP0418201317011949M.jpg"
