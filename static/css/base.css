@@ -3,7 +3,7 @@ html {
 }
 
 body {
-    background-color: #e7ebe8;
+    background-color: #faf5f5;
     /*height: calc(100vh - 164px);*/
     color: #555;
     font-family: 'Lato';
@@ -11,17 +11,25 @@ body {
 
 .hero-img{
     height: 500px;
-    background: url('/media/home-pic.jpg');
+    background: url('/media/home-pic.jpg') no-repeat;
     background-size: cover;
     background-position: center center;
-    box-shadow: inset 0 0 7em 0 rgb(0 0 0 / 80%);
+    box-shadow: inset 0 0 7em 0 rgb(0 0 0 / 100%), 20px 20px 50px grey;
     margin: 0;
     padding: 0;
 }
 
 /* Navbar */
 .fixed-top {
-    background-color: #e7ebe8;
+    background-color: #faf5f5;
+}
+
+.nav-link {
+    color: #555;
+}
+
+.nav-link:hover {
+    color: #333333;
 }
 
 ul {
@@ -35,6 +43,8 @@ ul {
 .main-logo-link {
     width: fit-content;
 }
+
+/* .nav-link:hover {background: #555;} */
 
 /* from Bulma */
 .icon {
@@ -93,16 +103,7 @@ a.category-badge > span.badge:hover {
     border: 1px solid black !important;
 }
 
-/* White overlay to home image */
-.overlay {
-	height: 100%;
-	width: 100%;
-	top: 0;
-	left: 0;
-	position: fixed;
-	background: white;
-	z-index: -1;
-}
+
 
 /* -------------------------------- Media Queries */
 
