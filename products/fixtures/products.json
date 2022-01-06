@@ -8,8 +8,8 @@
           "price":695.00,
           "category":1,
           "rating":4.6,
-          "image_url":"",
-          "image":""
+          "image_url":"https://8000-purple-wasp-c9a659b6.ws-eu25.gitpod.io/media/furn4.jpg",
+          "image":"furn4.jpg"
        }
     },
     {
