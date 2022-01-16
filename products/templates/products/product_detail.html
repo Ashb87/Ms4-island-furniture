@@ -119,6 +119,80 @@
             </div>
         </div>
     </div>
+
+    <!----- Product Reviews Section ------------------------------->
+    <div class="container-fluid review-container pt-5 pb-5">
+        <!----- Product Reviews ----------------------------------->
+        <div class="row">
+            <div class="col-12 col-md-10 col-lg-6 offset-lg-3">
+                <h1 class="text-center underline">Reviews</h1>
+                {% for review in product.reviews.all %}
+                    <!----- If Review, Displays to User ----->
+                    <div class="card mt-5 rounded-0">
+                        <!----- Review Card ----->
+                        <div class="card-body">
+                            <p class="small text-muted"> by {{ review.user }} on {{ review.date_added|date:"d-m-Y"}}</p>
+                            <p class="card-title">{{ review.title }}<i class="mx-2 fas fa-star"></i>{{ review.rating }}/5</p>
+                            <p class="card-text lead">{{ review.content }}</p>
+                        </div>
+                        <!----- Edit Review Button ----->
+                        {% if review.user == request.user or request.user.is_superuser %}
+                            <div class="card-head">
+                                <a class="btn" href="{% url 'edit_review' review.id %}#reviews">
+                                    <i class="fas fa-edit"></i> Edit Review
+                                </a>
+                            </div>
+                        {% endif %}
+                    </div>
+                {% empty %}
+                    <!----- If No Reviews, Displays Text ----->
+                    <div class="text-center mt-5">
+                        <p class="review-text">No reviews yet! Why not leave the first?</p>
+                    </div>
+                {% endfor%}
+            </div>
+        </div>
+        <!----- Review Form --------------------------------------->
+        <div id="reviews" class="row">
+            <div class="col-12 col-md-10 col-lg-4 offset-lg-4">
+                <!----- hr To Display If No Reviews ----->
+                {% for review in product.reviews.all %}
+                {% empty %}
+                    <hr>
+                {% endfor %}
+                {% if request.user.is_authenticated %}
+                    <h5 class="text-center underline mt-4 mb-2">Write your review here!</h5>
+                {% else %}
+                    <p class="review-text text-center mt-4">
+                        <a href="{% url 'account_signup' %}">Register</a> or <a href="{% url 'account_login' %}">Log In</a> to leave a review!
+                    </p>
+                {% endif %}
+                <!----- Form Display If User ----->
+                {% if request.user.is_authenticated %}
+                    {% if edit %}
+                        <!----- Edit Existing Review ----->
+                        <form method="POST" action="{% url 'edit_review' review.id %}#reviews">
+                            {% csrf_token %}
+                            {{ form|crispy }}
+                            <div class="text-center mt-3">
+                                <button class="btn bb1 rounded-0 text-uppercase" type="submit">Update Review</button>
+                            </div>
+                        </form>
+                    {% else %}
+                        <!----- Submit New Review ----->
+                        <form method="POST" action="{% url 'add_review' product.id %}#reviews">
+                            {% csrf_token %}
+                            {{ form|crispy }}
+                            <div class="text-center mt-3">
+                                <button class="btn bb1 rounded-0 text-uppercase" type="submit">Submit Review</button>
+                            </div>
+                        </form>
+                    {% endif %}
+                {% endif %}
+            </div>
+        </div>
+    </div>
+
 {% endblock %}
 
 {% block postloadjs %}
