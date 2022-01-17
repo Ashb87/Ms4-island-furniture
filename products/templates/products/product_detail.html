@@ -121,7 +121,7 @@
     </div>
 
     <!----- Product Reviews Section ------------------------------->
-    <div class="container-fluid review-container pt-5 pb-5">
+    <div class="container-fluid review-container pt-3 pb-3">
         <!----- Product Reviews ----------------------------------->
         <div class="row">
             <div class="col-12 col-md-10 col-lg-6 offset-lg-3">
@@ -129,23 +129,23 @@
                 {% for review in product.reviews.all %}
                     <!----- If Review, Displays to User ----->
                     <button class="accordion my-2">
-                        <p>{{ review.title }}<i class="mx-2 fas fa-star"></i>{{ review.rating }}/5</p>
+                        <p class="review-text">{{ review.title }}<i class="mx-2 fas fa-star"></i>{{ review.rating }}/5</p>
                     </button>
                         <!----- Review Card ----->
                         <div class="panel">
-                        <div class="card-body">
-                            <p class="review-text lead">{{ review.content }}</p>
-                            <p class="small text-muted"> Added by {{ review.user }} on {{ review.date_added|date:"d-m-Y"}}</p>
-                        </div>
+                            <div class="card-body">
+                                <p class="review-text lead">{{ review.content }}</p>
+                                <p class="review-text small text-muted"> Added by {{ review.user }} on {{ review.date_added|date:"d-m-Y"}}</p>
+                            </div>
                         <!----- Edit Review Button ----->
                         {% if review.user == request.user or request.user.is_superuser %}
                             <div class="card-head">
                                 <a class="btn" href="{% url 'edit_review' review.id %}#reviews">
-                                    <i class="fas fa-edit"></i> Edit Review
+                                    Edit Review <i class="far fa-edit"></i>
                                 </a>
                             </div>
                         {% endif %}
-                    </div>
+                        </div>
                 {% empty %}
                     <!----- If No Reviews, Displays Text ----->
                     <div class="text-center mt-5">
@@ -154,6 +154,8 @@
                 {% endfor%}
             </div>
         </div>
+
+        <hr>
         <!----- Review Form --------------------------------------->
         <div id="reviews" class="row">
             <div class="col-12 col-md-10 col-lg-4 offset-lg-4">
@@ -195,6 +197,7 @@
         </div>
     </div>
 
+<!-- Javascript for reviews accordion from w3schools-->    
 <script>
 var acc = document.getElementsByClassName("accordion");
 var i;

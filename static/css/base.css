@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
+
 html {
     height: 100%;
 }
@@ -7,7 +9,7 @@ body {
     background-size: cover;
     height: calc(100vh - 164px);
     color: #555;
-    font-family: 'Lato';
+    font-family: 'montserrat';
 }
 
 .overlay {
@@ -25,12 +27,14 @@ body {
     background-color: #681919;
 }
 
-.nav-link {
-    color: #555;
+.nav-link,
+.navbar-light .navbar-nav .nav-link{
+    color: white;
 }
 
+.navbar-light .navbar-nav .nav-link:hover,
 .nav-link:hover {
-    color: #333333;
+    color: #999999;
 }
 
 ul {
@@ -102,9 +106,6 @@ a.category-badge > span.badge:hover {
     cursor: pointer;
 }
 
-.text-black {
-    color: #000 !important;
-}
 
 .border-black {
     border: 1px solid black !important;
@@ -176,10 +177,6 @@ a.category-badge > span.badge:hover {
     height: 100px;
     overflow-x: hidden;
     overflow-y: auto;
-}
-
-#delivery-banner {
-    background-color: #100742;
 }
 
 /*--- Checkout page ---*/
@@ -304,7 +301,7 @@ select option[value=""] {
 }
 
 .allauth-form-inner-content a {
-	color: #17a2b8; /* text-info */
+	color: #babd35; /* text-info */
 }
 
 /* Product Form */
@@ -335,13 +332,17 @@ select option[value=""] {
     border-radius: 0;
 }
 
+.review-text {
+    margin-bottom: 0;
+}
+
 
 /* Style the buttons that are used to open and close the accordion panel */
 .accordion {
     background-color: #eee;
     color: #444;
     cursor: pointer;
-    padding: 18px;
+    padding: 12px;
     width: 100%;
     text-align: left;
     border: none;
@@ -356,7 +357,7 @@ select option[value=""] {
   
   /* Style the accordion panel. Note: hidden by default */
   .panel {
-    padding: 0 18px;
+    padding: 0 10px;
     background-color: white;
     display: none;
     overflow: hidden;
