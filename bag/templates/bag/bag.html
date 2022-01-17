@@ -37,9 +37,10 @@
                         {{ item.color|upper }}{% else %}N/A{% endif %}</p>
                 </div>
                 <div class="col-12 col-md-3 mb-4">
+                    <p class="my-0"><strong>Price</strong></p>
                     <p class="my-0">£{{ item.product.price }}</p>
                 </div>
-                <div class="col-12 col-md-3 mb-4">
+                <div class="offset-2 offset-md-0 col-8 col-md-3 mb-4">
                     <p class="my-o"><strong>Quantity</strong></p>
                     <form class="form update-form" method="POST" action="{% url 'adjust_bag' item.item_id %}">
                         {% csrf_token %}
