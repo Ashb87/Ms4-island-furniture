@@ -128,12 +128,14 @@
                 <h1 class="text-center underline">Reviews</h1>
                 {% for review in product.reviews.all %}
                     <!----- If Review, Displays to User ----->
-                    <div class="card mt-5 rounded-0">
+                    <button class="accordion my-2">
+                        <p>{{ review.title }}<i class="mx-2 fas fa-star"></i>{{ review.rating }}/5</p>
+                    </button>
                         <!----- Review Card ----->
+                        <div class="panel">
                         <div class="card-body">
-                            <p class="small text-muted"> by {{ review.user }} on {{ review.date_added|date:"d-m-Y"}}</p>
-                            <p class="card-title">{{ review.title }}<i class="mx-2 fas fa-star"></i>{{ review.rating }}/5</p>
-                            <p class="card-text lead">{{ review.content }}</p>
+                            <p class="review-text lead">{{ review.content }}</p>
+                            <p class="small text-muted"> Added by {{ review.user }} on {{ review.date_added|date:"d-m-Y"}}</p>
                         </div>
                         <!----- Edit Review Button ----->
                         {% if review.user == request.user or request.user.is_superuser %}
@@ -192,6 +194,27 @@
             </div>
         </div>
     </div>
+
+<script>
+var acc = document.getElementsByClassName("accordion");
+var i;
+
+for (i = 0; i < acc.length; i++) {
+  acc[i].addEventListener("click", function() {
+    /* Toggle between adding and removing the "active" class,
+    to highlight the button that controls the panel */
+    this.classList.toggle("active");
+
+    /* Toggle between hiding and showing the active panel */
+    var panel = this.nextElementSibling;
+    if (panel.style.display === "block") {
+      panel.style.display = "none";
+    } else {
+      panel.style.display = "block";
+    }
+  });
+}
+</script>
 
 {% endblock %}
 
