@@ -1,5 +1,5 @@
 from django.db import models
-from django.contrib.auth.models import User
+from django.contrib.auth.models import User #
 
 
 class Category(models.Model):
@@ -31,7 +31,7 @@ class Product(models.Model):
         return self.name
 
 
-class ProductReview(models.Model):
+class ProductReview(models.Model): #
     """
     Product Review Model
     """
