@@ -118,9 +118,12 @@
                 </div>
             </div>
             <div class="row justify-content-center">
-                <nav class="navbar navbar-expand-lg navbar-light w-100">
-                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#main-nav" aria-controls="main-nav" aria-expanded="false" aria-label="Toggle navigation">
+                <nav class="navbar navbar-expand-lg navbar-dark w-100">
+                    <!--<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#main-nav" aria-controls="main-nav" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
+                    </button> -->
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#main-nav" aria-controls="main-nav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="" role="button" ><i class="fa fa-bars" aria-hidden="true" style="color:#e6e6ff"></i></span>
                     </button>
                     {% include 'includes/mobile-top-header.html' %}
                     {% include 'includes/main-nav.html' %}
@@ -151,6 +154,43 @@
 
         {% block content %}
         {% endblock %}
+
+        <!-- Footer -->
+        <div class="container-fluid footer">
+            <div class="row">
+                <div class="col-12 text-center mt-5 col-md-4">
+                    <h3 class="footer-heading">Contact</h3>
+                    <p class="footer-txt"><i class="fas fa-phone"></i> 07123456789</p>
+                    <p class="footer-txt"><i class="fas fa-envelope-open"></i> info@islandfurniture.co.uk</p>
+                    <p class="footer-txt"><i class="fas fa-map-marker-alt"></i> Island Furniture, 100 High St, Mersea Island, ME3 5EA</p>
+                </div>
+                <div class="col-12 text-center mt-5 col-md-4">
+                    <p class="footer-txt">© 2022 Island Furniture.Co</p>
+                </div>
+                <div class="col-12 text-center mt-5 col-md-4">
+                    <ul class="list-inline d-flex justify-content-center">
+                        <li class="list-inline-item footer-li">
+                            <a href="https://www.instagram.com" target="_blank">
+                                <i class="fab fa-instagram footericon" aria-hidden="true"></i>
+                                <span class="sr-only">Instagram</span>
+                            </a>
+                        </li>
+                        <li class="list-inline-item footer-li">
+                            <a href="https://www.youtube.com" target="_blank">
+                                <i class="fab fa-youtube footericon" aria-hidden="true"></i>
+                                <span class="sr-only">Youtube</span>
+                            </a>
+                        </li>
+                        <li class="list-inline-item footer-li">
+                            <a href="https://www.pinterest.com/" target="_blank">
+                                <i class="fab fa-pinterest-p footericon" aria-hidden="true"></i>
+                                <span class="sr-only">Pinterest</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
 
         {% block postloadjs %}
         <script type="text/javascript">

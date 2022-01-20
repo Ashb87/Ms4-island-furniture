@@ -190,6 +190,12 @@ a.category-badge > span.badge:hover {
     overflow-y: auto;
 }
 
+/*--- Index page ---*/
+
+.color-img {
+    border-radius: 50%;
+}
+
 /*--- Checkout page ---*/
 
 .StripeElement,
@@ -387,7 +393,7 @@ select option[value=""] {
 
 .footer-txt {
     margin-bottom: 5px;
-    color: goldenrod;
+    color: #daa520;
 }
 
 .footer hr {
