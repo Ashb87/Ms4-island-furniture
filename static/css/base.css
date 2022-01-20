@@ -200,8 +200,9 @@ a.category-badge > span.badge:hover {
     margin-top: 30px;
     margin-bottom: 30px;
     background-color: gray;
+    border-radius: 10px;
+    border: 2px solid black;
 }
-
 /*--- Checkout page ---*/
 
 .StripeElement,
