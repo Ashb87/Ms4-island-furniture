@@ -5,11 +5,9 @@ html {
 }
 
 body {
-    background: url('/media/hero-img-1.jpeg') no-repeat center center fixed;
-    background-size: cover;
-    height: calc(100vh - 164px);
     color: #555;
     font-family: 'montserrat';
+    background-color: #d3d3d3;
 }
 
 .overlay {
@@ -22,9 +20,22 @@ body {
 	z-index: -1;
 }
 
+/* The hero image */
+.hero-image {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("/media/ms4-hero-image.jpeg") ;
+
+  height: 550px;
+  width: 95%;
+  margin: auto;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
 /* Navbar */
 .fixed-top {
-    background-color: #681919;
+    background-color: #07102c;
 }
 
 .nav-link,
@@ -363,6 +374,31 @@ select option[value=""] {
     overflow: hidden;
   }
 
+/* Footer */
+
+.footer {
+    background-color: #07102c;
+    margin-top: 30px;
+}
+
+.footer-heading {
+    margin-bottom: 5pxpx;
+}
+
+.footer-txt {
+    margin-bottom: 5px;
+    color: goldenrod;
+}
+
+.footer hr {
+    color :green;
+}
+
+li .list-inline-item .footer-li {
+    font-size: 16px;
+    color: goldenrod;
+}
+
 
 /* -------------------------------- Media Queries */
 
@@ -386,15 +422,23 @@ select option[value=""] {
     .header-container {
         padding-top: 164px;
     }
-}
+} 
 
 /* pad the top a bit when navbar is collapsed on mobile */
 @media (max-width: 991px) {
-    .header-container {
+    header-container {
         padding-top: 116px;
     }
 
     body {
         height: calc(100vh - 116px);
+    }
+}
+
+/* for medium screens and smaller */
+
+@media (max-width: 1000px) {
+    .hero-image {
+        width: 100%;
     }
 }
