@@ -35,12 +35,21 @@ body {
 
 /* Navbar */
 .fixed-top {
-    background-color: #07102c;
+    background-color: #3b433c;
+}
+
+.mobile-header-link a {
+    margin: auto;
+}
+
+.navbar-toggler {
+    padding: 0;
 }
 
 .nav-link,
 .navbar-light .navbar-nav .nav-link{
     color: white;
+    padding: 5px;
 }
 
 .navbar-light .navbar-nav .nav-link:hover,
@@ -139,18 +148,6 @@ a.category-badge > span.badge:hover {
     height: 2px;
 }
 
-/* from CSS-tricks.com: https://css-tricks.com/snippets/css/css-triangle/ */
-.arrow-up {
-    width: 0; 
-    height: 0; 
-    border-left: 4px solid transparent;
-    border-right: 4px solid transparent; 
-    border-bottom: 10px solid black;
-    position: absolute;
-    top: -10px;
-    right: 36px;
-}
-
 /* Convenience classes - colors copied from Bootstrap */
 .arrow-primary {
     border-bottom-color: #007bff !important;
@@ -197,12 +194,19 @@ a.category-badge > span.badge:hover {
 }
 
 .about-us-card {
+    margin: auto;
     margin-top: 30px;
     margin-bottom: 30px;
-    background-color: gray;
-    border-radius: 10px;
-    border: 2px solid black;
+    background-color: #d3d3d3;
+    border-radius: 0;
+    border: 1px solid black;
 }
+
+.about-section {
+    background-color: grey;
+    margin-top: 20px;
+}
+
 /*--- Checkout page ---*/
 
 .StripeElement,
@@ -390,12 +394,13 @@ select option[value=""] {
 /* Footer */
 
 .footer {
-    background-color: #07102c;
+    background-color: #3b433c;
     margin-top: 30px;
 }
 
 .footer-heading {
-    margin-bottom: 5pxpx;
+    margin-bottom: 5px;
+    color: white;
 }
 
 .footer-txt {
@@ -403,9 +408,6 @@ select option[value=""] {
     color: #daa520;
 }
 
-.footer hr {
-    color :green;
-}
 
 li .list-inline-item .footer-li {
     font-size: 16px;
