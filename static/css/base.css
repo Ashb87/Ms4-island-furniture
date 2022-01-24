@@ -237,6 +237,20 @@ a.category-badge > span.badge:hover {
     font-family: "handlee";
 }
 
+/*--- Products Page ---*/
+
+.review-container {
+    background-color: #69776d;
+}
+
+.breadcrumb {
+    background-color: #e0e0e0;
+}
+
+.breadcrumb-item.active {
+    background-color: #e0e0e0;
+}
+
 /*--- Checkout page ---*/
 
 .StripeElement,

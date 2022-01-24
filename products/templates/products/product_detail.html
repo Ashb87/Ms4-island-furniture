@@ -10,7 +10,6 @@
 {% endblock %}
 
 {% block content %}
-    <div class="overlay"></div>
     <nav aria-label="breadcrumb">
         <ol class="breadcrumb mt-3 ms-3">
           <li class="breadcrumb-item"><a href="{% url 'home' %}">Home</a></li>
@@ -162,7 +161,7 @@
                 <!----- hr To Display If No Reviews ----->
                 {% for review in product.reviews.all %}
                 {% empty %}
-                    <hr>
+                    
                 {% endfor %}
                 {% if request.user.is_authenticated %}
                     <h5 class="text-center underline mt-4 mb-2">Write your review here!</h5>
