@@ -167,7 +167,7 @@
                     <h5 class="text-center underline mt-4 mb-2">Write your review here!</h5>
                 {% else %}
                     <p class="review-text text-center mt-4">
-                        <a href="{% url 'account_signup' %}">Register</a> or <a href="{% url 'account_login' %}">Log In</a> to leave a review!
+                        <a class="review-link" href="{% url 'account_login' %}">Log In</a> or <a class="review-link" href="{% url 'account_signup' %}">Register</a>  to leave a review!
                     </p>
                 {% endif %}
                 <!----- Form Display If User ----->
