@@ -1,13 +1,17 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Handlee&family=Montserrat:wght@300&display=swap');
 
 html {
     height: 100%;
 }
 
 body {
-    color: #555;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;    
+    min-height: 100vh;
     font-family: 'montserrat';
-    background-color: white;
+    background-color: #e0e0e0;
 }
 
 /* The hero image */
@@ -52,25 +56,33 @@ body {
 
 .nav-link,
 .navbar-light .navbar-nav .nav-link{
-    color: white;
-    padding: 5px;
-}
-
-.navbar-light .navbar-nav .nav-link:hover,
-.nav-link:hover {
-    color: #999999;
+    color: #daa520;
 }
 
 ul {
     padding-inline-start: 0;
 }
 
+.navbar-dark .navbar-nav .nav-link,
 .logo-font {
-    text-transform: uppercase;
+    font-family: "handlee";
+    letter-spacing: 2px;
+    color: #daa520;
+}
+
+.navbar-dark .navbar-nav .nav-link:hover,
+.logo-font:hover,
+.nav-link:hover {
+    color: #9e8954;
 }
 
 .main-logo-link {
     width: fit-content;
+}
+
+.mobile-header-text {
+    color : white;
+    padding-top: 10px;
 }
 
 input[name='q']::placeholder {
@@ -201,13 +213,26 @@ a.category-badge > span.badge:hover {
     margin: auto;
     margin-top: 30px;
     margin-bottom: 30px;
-    background-color: #d3d3d3;
+    background-color: #69776d;
     border-radius: 0;
-    border: 1px solid black;
+    border: 2px solid #9e8954;
 }
 
 .about-section {
     margin-top: 20px;
+}
+
+.about-heading {
+    font-family: "handlee";
+    color : #daa520;
+}
+
+.about-text {
+    color : white;
+}
+
+.colors-used-heading {
+    font-family: "handlee";
 }
 
 /*--- Checkout page ---*/
@@ -411,10 +436,10 @@ select option[value=""] {
     color: #daa520;
 }
 
-
+.footericon,
 li .list-inline-item .footer-li {
     font-size: 16px;
-    color: goldenrod;
+    color: #daa520;
 }
 
 
@@ -444,17 +469,6 @@ li .list-inline-item .footer-li {
 
 /* pad the top a bit when navbar is collapsed on mobile */
 @media (max-width: 991px) {
-    header-container {
-        padding-top: 116px;
-    }
-
-    body {
-        height: calc(100vh - 116px);
-    }
-
-    .display-4.logo-font.text-black {
-        font-size: 2rem;
-    }
 
     .nav-link {
         padding: 0.15rem;
@@ -462,11 +476,10 @@ li .list-inline-item .footer-li {
 
     .nav-link i.fa-lg {
         font-size: 1rem;
-        padding-top: 20px;
+        padding-top: 10px;
     }
 
     .navbar-toggler {
-        padding: .6rem .6rem;
         font-size: 1.5rem;
     }
 }
@@ -476,5 +489,19 @@ li .list-inline-item .footer-li {
 @media (max-width: 1000px) {
     .hero-image {
         width: 100%;
+    }
+}
+
+/* small to medium screens */
+
+@media (min-width: 576px) and (max-width: 992px) {
+    .hero-image {
+        height: 450px
+    }
+}
+
+@media (max-width: 575.99px) {
+    .hero-image {
+        height: 350px;
     }
 }
