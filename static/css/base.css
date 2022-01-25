@@ -41,6 +41,10 @@ body {
     to {opacity: 5}
   }
 
+hr {
+    background-color: #9e8954;
+}
+
 /* Navbar */
 .fixed-top {
     background-color: #3b433c;
@@ -234,15 +238,16 @@ a.category-badge > span.badge:hover {
 /*--- Products Page ---*/
 
 .review-container {
-    background-color: #69776d;
+    background-color: #415246;
 }
 
 .breadcrumb {
-    background-color: #e0e0e0;
+    background-color: white;
+    padding-top: 0;
 }
 
 .breadcrumb-item.active {
-    background-color: #e0e0e0;
+    background-color: white;
 }
 
 a.review-link {
@@ -251,6 +256,10 @@ a.review-link {
 
 .bag-info {
     color: black;
+}
+
+.product-card {
+    padding-left: 0;
 }
 
 /*--- Checkout page ---*/
@@ -511,6 +520,14 @@ li .list-inline-item .footer-li {
 @media (max-width: 1000px) {
     .hero-image {
         width: 100%;
+    }
+
+    .breadcrumb {
+        padding-top: 20px;
+    }
+
+    .block-container {
+        padding-top: 54px;
     }
 }
 

@@ -10,14 +10,14 @@
 {% endblock %}
 
 {% block content %}
-    <nav aria-label="breadcrumb">
-        <ol class="breadcrumb mt-3 ms-3">
-          <li class="breadcrumb-item"><a href="{% url 'home' %}">Home</a></li>
-          <li class="breadcrumb-item"><a href="{% url 'products' %}?category={{ product.category.name }}">{{ product.category.friendly_name }}</a></li>
-          <li class="breadcrumb-item active" aria-current="page">{{ product.name }}</li>
-        </ol>
-    </nav>
-    <div class="container-fluid">
+    <div class="block-container container-fluid">
+        <nav aria-label="breadcrumb">
+            <ol class="breadcrumb mt-3 ms-3">
+              <li class="breadcrumb-item"><a href="{% url 'home' %}">Home</a></li>
+              <li class="breadcrumb-item"><a href="{% url 'products' %}?category={{ product.category.name }}">{{ product.category.friendly_name }}</a></li>
+              <li class="breadcrumb-item active" aria-current="page">{{ product.name }}</li>
+            </ol>
+        </nav>
         <div class="row">
             <div class="col-12 col-md-6 col-lg-4 offset-lg-2">
                 <div class="image-container my-5">
@@ -123,8 +123,9 @@
     <div class="container-fluid review-container pt-3 pb-3">
         <!----- Product Reviews ----------------------------------->
         <div class="row">
-            <div class="col-12 col-md-10 col-lg-6 offset-lg-3">
+            <div class="col-12 col-md-10 col-lg-6 offset-md-1 offset-lg-3">
                 <h1 class="text-center underline">Reviews</h1>
+                <hr class="w-25">
                 {% for review in product.reviews.all %}
                     <!----- If Review, Displays to User ----->
                     <button class="accordion my-2">
@@ -154,10 +155,10 @@
             </div>
         </div>
 
-        <hr>
+        <hr class="w-50">
         <!----- Review Form --------------------------------------->
         <div id="reviews" class="row">
-            <div class="col-12 col-md-10 col-lg-4 offset-lg-4">
+            <div class="col-12 col-md-10 col-lg-4 offset-md-1 offset-lg-4">
                 <!----- hr To Display If No Reviews ----->
                 {% for review in product.reviews.all %}
                 {% empty %}
