@@ -4,8 +4,8 @@ from django.contrib.auth.decorators import login_required
 from django.db.models import Q
 from django.db.models.functions import Lower
 
-from .models import Product, Category, ProductReview  #
-from .forms import ReviewForm, ProductForm  #
+from .models import Product, Category, ProductReview  
+from .forms import ReviewForm, ProductForm  
 
 
 def all_products(request):
@@ -64,17 +64,17 @@ def product_detail(request, product_id):
     """
 
     product = get_object_or_404(Product, pk=product_id)
-    form = ReviewForm()  #
+    form = ReviewForm()  
 
     context = {
         'product': product,
-        'form': form,  #
+        'form': form,  
     }
 
     return render(request, 'products/product_detail.html', context)
 
 
-@login_required  #
+@login_required  
 def add_review(request, product_id):
     """ Allow user to add review """
 
@@ -100,7 +100,7 @@ def add_review(request, product_id):
     return render(request, context)
 
 
-@login_required  #
+@login_required  
 def edit_review(request, review_id):
     """ Allow user to edit their review """
 

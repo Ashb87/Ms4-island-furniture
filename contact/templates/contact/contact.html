@@ -13,8 +13,7 @@
 <div class="block-container container"></div>
     <div class="row">
         <div class="col-12 col-md-8 offset-md-2">
-            <form onsubmit="return sendMail(this);" method="post">
-                {% csrf_token %}
+            <form onsubmit="return sendMail(this);"></form>
                 <div>
                     <h2 class="">Get in touch.</h2>
                 </div>
@@ -35,4 +34,6 @@
     </div>
 </div>
 
+<script src="script/js/email.js"></script>
 {% endblock %}
+
