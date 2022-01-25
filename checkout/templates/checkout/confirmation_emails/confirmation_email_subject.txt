@@ -1,1 +1,1 @@
-Boutique Ado Confirmation for Order Number {{ order.order_number }}
+Island Furniture Co. Confirmation for Order Number {{ order.order_number }}

@@ -11,7 +11,7 @@ body {
     flex-direction: column;    
     min-height: 100vh;
     font-family: 'montserrat';
-    background-color: #e0e0e0;
+    background-color: white;
 }
 
 /* The hero image */
@@ -220,7 +220,7 @@ a.category-badge > span.badge:hover {
 
 .about-heading {
     font-family: "handlee";
-    color : #daa520;
+    color : #9e8954;
 }
 
 .about-text {
