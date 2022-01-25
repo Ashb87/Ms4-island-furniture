@@ -17,30 +17,26 @@ body {
 /* The hero image */
 .hero-image {
   background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("/media/ms4-hero-image.jpeg") ;
-
   height: 550px;
   width: 95%;
   margin: auto;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+ /* Fading animation for hero image */
+  animation-fill-mode: forwards;
+    -webkit-animation-name: hero-image;
+    -webkit-animation-duration: 5s;
+    animation-name: hero-image;
+    animation-duration: 5s;
 }
 
-/* Fading animation for hero image */
-.fade {
-    animation-fill-mode: forwards;
-    -webkit-animation-name: fade;
-    -webkit-animation-duration: 5s;
-    animation-name: fade;
-    animation-duration: 5s;
-  }
-  
-  @-webkit-keyframes fade {
+  @-webkit-keyframes hero-image {
     from {opacity: .2}
     to {opacity: 5}
   }
   
-  @keyframes fade {
+  @keyframes hero-image {
     from {opacity: .2}
     to {opacity: 5}
   }
@@ -88,8 +84,6 @@ ul {
 input[name='q']::placeholder {
     color: #aab7c4;
 }
-
-/* .nav-link:hover {background: #555;} */
 
 /* from Bulma */
 .icon {
@@ -255,6 +249,10 @@ a.review-link {
     color: white;
 }
 
+.bag-info {
+    color: black;
+}
+
 /*--- Checkout page ---*/
 
 .StripeElement,
@@ -377,7 +375,7 @@ select option[value=""] {
 }
 
 .allauth-form-inner-content a {
-	color: #babd35; /* text-info */
+	color: #9e8954; /* text-info */
 }
 
 /* Product Form */
@@ -448,7 +446,7 @@ select option[value=""] {
 
 .footer-heading {
     margin-bottom: 5px;
-    color: white;
+    color: #9e8954;
 }
 
 .footer-txt {
