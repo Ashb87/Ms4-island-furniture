@@ -241,6 +241,10 @@ a.category-badge > span.badge:hover {
     background-color: #415246;
 }
 
+.review-text {
+    color: white;
+}
+
 .breadcrumb {
     background-color: white;
     padding-top: 0;
@@ -251,7 +255,7 @@ a.category-badge > span.badge:hover {
 }
 
 a.review-link {
-    color: white;
+    color: #daa520;
 }
 
 .bag-info {
@@ -494,11 +498,12 @@ li .list-inline-item .footer-li {
     }
 
     .header-container {
-        padding-top: 164px;
+        padding-top: 124px;
     }
 } 
 
 /* pad the top a bit when navbar is collapsed on mobile */
+/* for medium screens and smaller */
 @media (max-width: 991px) {
 
     .nav-link {
@@ -513,11 +518,7 @@ li .list-inline-item .footer-li {
     .navbar-toggler {
         font-size: 1.5rem;
     }
-}
 
-/* for medium screens and smaller */
-
-@media (max-width: 1000px) {
     .hero-image {
         width: 100%;
     }
