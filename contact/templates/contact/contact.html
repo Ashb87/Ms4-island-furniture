@@ -1,0 +1,37 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block page_header %}
+    <div class="container header-container">
+        <div class="row">
+            <div class="col"></div>
+        </div>
+    </div>
+{% endblock %}
+
+{% block content %}
+
+<div class="row">
+    <div class="col-12 col-md-8 offset-md-2">
+        <form onsubmit="return sendMail(this);" method="post">
+            {% csrf_token %}
+            <div>
+                <h2 class="">Get in touch.</h2>
+            </div>
+            <div class="contact-form px-5 py-5">
+                <label for="fullname" class="form-label">Name</label>
+                <input type="text" name="name" class="form-control contact-form mb-3" id="fullname"
+                    placeholder="Full Name" required />
+                <label for="emailaddress" class="form-label">Email</label>
+                <input type="email" name="emailaddress" class="form-control mb-3 contact-form" id="emailaddress"
+                    placeholder="Email Address" required />
+                <label for="message" class="form-label">Message</label>
+                <textarea rows="5" name="message" class="form-control mb-3 contact-form" id="message"
+                    placeholder="Write your message here" required></textarea>
+                <button type="submit" class="btn text-uppercase center-block">Submit</button>
+            </div>
+        </form>
+    </div>
+</div>
+
+{% endblock %}
