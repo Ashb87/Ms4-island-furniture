@@ -27,7 +27,8 @@ def contact(request):
                 user_contact.user = user
             user_contact.save()
             send_confirmation_email(user_contact)
-            messages.success(request, "That's sent, check your email for confirmation")
+            messages.success(request, "Thanks for you message, you should recieve a \
+                confirmaion email")
             return redirect(reverse('home'))
         else:
             messages.error(request, 'There was an error with your form. \
