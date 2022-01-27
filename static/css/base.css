@@ -11,7 +11,7 @@ body {
     flex-direction: column;    
     min-height: 100vh;
     font-family: 'montserrat';
-    background-color: white;
+    background-color: #fffffa;
 }
 
 /* The hero image */
@@ -48,7 +48,6 @@ hr {
 
 /* Navbar */
 .fixed-top {
-    border: 1px solid #9e8954;
     background-color: #484848;
     /*background-color: #3b433c;*/
 }

@@ -1,11 +1,11 @@
 Hi {{ contact.first_name }}
 
-Thanks so much for contacting us.
+Thanks you for contacting us.
 
-We will get back to your query soon, to email {{ contact.email }}
+We will get back to your query soon as we can to email {{ contact.email }}
 
 For your record this was: {{ contact.query }}
 
 Sincerely,
 
-     Music To My Ears Team
+     Island Furniture Co.
