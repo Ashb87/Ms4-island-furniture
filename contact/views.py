@@ -17,7 +17,6 @@ def contact(request):
             'email': request.POST['email'],
             'order_number': request.POST['order_number'],
             'query': request.POST['query'],
-            'rate_us': request.POST['rate_us']
         }
         contact_form = ContactForm(form_data)
 
@@ -29,7 +28,7 @@ def contact(request):
             user_contact.save()
             send_confirmation_email(user_contact)
             messages.success(request, "That's sent, check your email for confirmation")
-            return redirect(reverse('shop'))
+            return redirect(reverse('home'))
         else:
             messages.error(request, 'There was an error with your form. \
                 Please double check your information.')
@@ -57,7 +56,7 @@ def contact(request):
 def send_confirmation_email(user_contact):
     """Send the user a confirmation email"""
     cust_email = user_contact.email
-    subject = 'Thank you for your message to Music To My Ears'
+    subject = 'Thank you for contacting Island Furniture'
     body = render_to_string(
             'contact/confirmation_emails/confirmation_email_body.txt',
             {'contact': user_contact})
