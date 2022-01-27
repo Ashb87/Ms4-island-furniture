@@ -20,6 +20,7 @@ body {
   height: 550px;
   width: 95%;
   margin: auto;
+  border: 2px solid #9e8954;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -47,7 +48,9 @@ hr {
 
 /* Navbar */
 .fixed-top {
-    background-color: #3b433c;
+    border: 1px solid #9e8954;
+    background-color: #484848;
+    /*background-color: #3b433c;*/
 }
 
 .navbar-toggler {
