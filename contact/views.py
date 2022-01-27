@@ -1,43 +1,70 @@
-from django.shortcuts import render, get_object_or_404
-from django.template.loader import render_to_string
+from django.shortcuts import render, redirect, reverse
 from django.core.mail import send_mail
-from django.conf import settings
+from django.contrib.auth.models import User
 from django.contrib import messages
+from django.conf import settings
+from django.template.loader import render_to_string
+from profiles.models import UserProfile
+from .forms import ContactForm
 
-from .forms import OrderInquiryForm
 
-
-def order_inquiry(request):
-    """ Allow users to send order enquiries """
-    user_email = request.POST.get('contact_email')
-
-    if request.method == 'POST':
-        inquiry_form = {
-            'name': request.POST.get('name'),
-            'contact_email': request.POST.get('contact_email'),
-            'order_number': request.POST.get('order_number'),
-            'message': request.POST.get('message'),
+def contact(request):
+    """ A view to return the contact page """
+    if request.method == "POST":
+        form_data = {
+            'first_name': request.POST['first_name'],
+            'surname': request.POST['surname'],
+            'email': request.POST['email'],
+            'order_number': request.POST['order_number'],
+            'query': request.POST['query'],
+            'rate_us': request.POST['rate_us']
         }
-        # send email
-        subject = render_to_string(
-            'contact/order_inquiry_emails/inquiry_subject.txt',
-            {'inquiry': inquiry_form}
-        )
-        body = render_to_string(
-            'contact/order_inquiry_emails/inquiry_body.txt',
-            {'inquiry': inquiry_form}
-        )
-        send_mail(
-            subject, body, user_email, [settings.DEFAULT_FROM_EMAIL],
-            fail_silently=False
-        )
-        messages.success(request, 'Inquiry Successfully Sent!')
+        contact_form = ContactForm(form_data)
 
-    form = OrderInquiryForm
+        if contact_form.is_valid():
+            user_contact = contact_form.save(commit=False)
+            if request.user.is_authenticated:
+                user = User.objects.get(username=request.user)
+                user_contact.user = user
+            user_contact.save()
+            send_confirmation_email(user_contact)
+            messages.success(request, "That's sent, check your email for confirmation")
+            return redirect(reverse('shop'))
+        else:
+            messages.error(request, 'There was an error with your form. \
+                Please double check your information.')
 
-    context = {
-        'form': form,
-        'on_profile_page': True,
+    else:
+        if request.user.is_authenticated:
+            try:
+                profile = UserProfile.objects.get(user=request.user)
+                contact_form = ContactForm(initial={
+                    'first_name': profile.default_first_name,
+                    'surname': profile.default_surname,
+                    'email': profile.default_email,
+                })
+            except UserProfile.DoesNotExist:
+                contact_form = ContactForm()
+        else:
+            contact_form = ContactForm()
+        template = 'contact/contact.html'
+        context = {
+            'contact_form': contact_form
         }
+        return render(request, template, context)
 
-    return render(request, 'contact/contact.html')
+
+def send_confirmation_email(user_contact):
+    """Send the user a confirmation email"""
+    cust_email = user_contact.email
+    subject = 'Thank you for your message to Music To My Ears'
+    body = render_to_string(
+            'contact/confirmation_emails/confirmation_email_body.txt',
+            {'contact': user_contact})
+
+    send_mail(
+        subject,
+        body,
+        settings.DEFAULT_FROM_EMAIL,
+        [cust_email]
+    )

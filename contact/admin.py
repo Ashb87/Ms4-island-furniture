@@ -1,7 +1,10 @@
 from django.contrib import admin
-from .models import OrderInquiry
-
-# Register your models here.
+from .models import Contact
 
 
-admin.site.register(OrderInquiry)
+class ContactAdmin(admin.ModelAdmin):
+    list_display = ('email_date', 'query', 'order_number', 'user')
+    ordering = ('-email_date', 'user',)
+
+
+admin.site.register(Contact, ContactAdmin)
