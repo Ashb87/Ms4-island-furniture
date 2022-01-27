@@ -215,17 +215,21 @@ a.category-badge > span.badge:hover {
     border-radius: 50%;
 }
 
-.about-us-card {
+/*.about-us-card {
     margin: auto;
     margin-top: 30px;
     margin-bottom: 30px;
-    background-color: #69776d;
+    background-color: #3b433c;
     border-radius: 0;
     border: 2px solid #9e8954;
-}
+}*/
+
+
 
 .about-section {
-    margin-top: 20px;
+    background-color: #3b433c;
+    margin-top: 30px;
+    text-align: center;
 }
 
 .about-heading {
