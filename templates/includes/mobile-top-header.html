@@ -1,5 +1,16 @@
 <div>
-    <a href="{% url 'home' %}" class="nav-link mobile-header-text d-lg-none">
-        <h3 class="logo-font my-0"><strong>Island</strong> Furniture.Co</h3>
-    </a>
+    <ul>
+        <li class="list-inline-item">
+            <a href="{% url 'home' %}" class="nav-link mobile-header-text d-lg-none">
+                <h4 class="logo-font my-0"><strong>Island</strong> Furniture.Co</h4>
+            </a>
+        </li>
+        <li class="list-inline-item">
+            <a class="{% if grand_total %}text-primary font-weight-bold{% else %}{% endif %} nav-link d-block d-lg-none" href="{% url 'view_bag' %}">
+                <div class="mobile-nav-link">
+                    <p class="my-0"></p><i class="fas fa-shopping-bag fa-lg"></i> {{ product_count }}</p>                    
+                </div>
+            </a>
+        </li>
+    </ul>
 </div>

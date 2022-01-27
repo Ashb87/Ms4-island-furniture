@@ -42,6 +42,7 @@ body {
     to {opacity: 5}
   }
 
+/* Hr line throughout site*/
 hr {
     background-color: #9e8954;
 }
@@ -49,7 +50,6 @@ hr {
 /* Navbar */
 .fixed-top {
     background-color: #484848;
-    /*background-color: #3b433c;*/
 }
 
 .navbar-toggler {
@@ -65,7 +65,11 @@ ul {
     padding-inline-start: 0;
 }
 
-.navbar-dark .navbar-nav .nav-link,
+.navbar-dark .navbar-nav .nav-link {
+    color: #9e8954;
+    letter-spacing: 2px;
+}
+
 .logo-font {
     font-family: "handlee";
     letter-spacing: 2px;
