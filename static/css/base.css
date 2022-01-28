@@ -71,6 +71,7 @@ ul {
     letter-spacing: 2px;
 }
 
+.heading-text,
 .logo-font {
     font-family: "handlee";
     letter-spacing: 2px;
@@ -266,6 +267,10 @@ a.category-badge > span.badge:hover {
 
 a.review-link {
     color: #daa520;
+}
+
+h5 {
+    color: white;
 }
 
 .bag-info {
