@@ -116,6 +116,16 @@ input[name='q']::placeholder {
     color: white;
 }
 
+.btn-green {
+    background: #3b433c;
+    color: #daa520;
+}
+
+.btn-green:hover {
+    background: #484848;
+    color: white;
+}
+
 .shop-now-button:hover,
 .shop-now-button:active,
 .shop-now-button:focus,
@@ -214,17 +224,6 @@ a.category-badge > span.badge:hover {
 .color-img {
     border-radius: 50%;
 }
-
-/*.about-us-card {
-    margin: auto;
-    margin-top: 30px;
-    margin-bottom: 30px;
-    background-color: #3b433c;
-    border-radius: 0;
-    border: 2px solid #9e8954;
-}*/
-
-
 
 .about-section {
     background-color: #3b433c;
