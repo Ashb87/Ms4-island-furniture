@@ -48,6 +48,7 @@ hr {
 }
 
 /* Navbar */
+
 .fixed-top {
     background-color: #484848;
 }
@@ -486,6 +487,13 @@ li .list-inline-item .footer-li {
     color: #9e8954;
 }
 
+.footer-email {
+    color: white 
+}
+
+.footer-email:hover {
+    color: #daa520;
+}
 
 /* -------------------------------- Media Queries */
 
