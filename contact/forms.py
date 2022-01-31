@@ -9,6 +9,10 @@ class ContactForm(forms.ModelForm):
         exclude = ('user', 'email_date')
 
     def __init__(self, *args, **kwargs):
+        """
+        Add placeholders and classes, remove auto-generated
+        labels and set autofocus on first field
+        """
         super().__init__(*args, **kwargs)
         placeholders = {
             'first_name': 'Name',
@@ -25,3 +29,4 @@ class ContactForm(forms.ModelForm):
             else:
                 placeholder = placeholders[field]
             self.fields[field].widget.attrs['placeholder'] = placeholder
+            self.fields[field].label = False
