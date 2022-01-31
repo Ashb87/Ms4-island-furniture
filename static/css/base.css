@@ -107,6 +107,12 @@ input[name='q']::placeholder {
 }
 
 /* buttons */
+
+.btn:focus {
+    outline: none;
+    box-shadow: none;
+  }
+  
 .shop-now-button {
     background: black;
     color: white;
@@ -403,19 +409,15 @@ select option[value=""] {
 	/* btn */
 	display: inline-block;
     font-weight: 400;
-    color: #fff;
     text-align: center;
     vertical-align: middle;
     -webkit-user-select: none;
     -moz-user-select: none;
     -ms-user-select: none;
-    user-select: none;
-    background-color: #000;
-    border: 1px solid #000;
+    user-select: none;    
     padding: .375rem .75rem;
     font-size: 1rem;
     line-height: 1.5;
-    border-radius: 0;
 
     /* standard bootstrap btn transitions */
     transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
@@ -424,12 +426,10 @@ select option[value=""] {
 .allauth-form-inner-content button:hover,
 .allauth-form-inner-content input[type='submit']:hover {	
 	color: #fff;
-    background-color: #222;
-    border-color: #222;
 }
 
 .allauth-form-inner-content a {
-	color: #9e8954; /* text-info */
+	color: #daa520; /* text-info */
 }
 
 /* Product Form */
