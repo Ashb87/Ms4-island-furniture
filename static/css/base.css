@@ -108,6 +108,16 @@ input[name='q']::placeholder {
 
 /* buttons */
 
+
+.search-btn {
+    background: #9e8954;
+    border: none;
+}
+
+.search-btn:hover {
+    background: #daa520;
+}
+
 .btn:focus {
     outline: none;
     box-shadow: none;
