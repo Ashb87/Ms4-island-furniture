@@ -135,25 +135,19 @@ input[name='q']::placeholder {
     color: white;
 }
 
+.btn-password,
 .btn-green {
     background: #3b433c;
     color: #daa520;
 }
 
+.btn-password:hover,
 .btn-green:hover {
     background: #484848;
     color: white;
+    text-decoration: none;
 }
 
-.shop-now-button:hover,
-.shop-now-button:active,
-.shop-now-button:focus,
-.btn-black:hover,
-.btn-black:active,
-.btn-black:focus {
-    background: #222;
-    color: white;
-}
 
 a.category-badge > span.badge:hover {
     background: #212529 !important;
