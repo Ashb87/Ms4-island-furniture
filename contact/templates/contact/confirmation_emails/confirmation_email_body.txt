@@ -4,7 +4,9 @@ Thanks you for contacting us.
 
 We will get back to your query soon as we can to your email address {{ contact.email }}
 
-For your record this was: <br> {{ contact.query }}
+For your record this was: 
+
+{{ contact.query }}
 
 Sincerely,
 
