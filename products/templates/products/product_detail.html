@@ -146,7 +146,7 @@
                 <hr class="w-25">
                 {% for review in product.reviews.all %}
                     <!----- If Review, Displays to User ----->
-                    <button class="accordion my-2">
+                    <button class="accordion btn my-2">
                         <p class="inner-review-text">{{ review.title }}<i class="mx-2 fas fa-star"></i>{{ review.rating }}/5</p>
                     </button>
                         <!----- Review Card ----->
@@ -158,7 +158,7 @@
                         <!----- Edit Review Button ----->
                         {% if review.user == request.user or request.user.is_superuser %}
                             <div class="card-head">
-                                <a class="btn btn-green rounded-2" href="{% url 'edit_review' review.id %}#reviews">
+                                <a class="btn btn-green rounded-2 mb-3" href="{% url 'edit_review' review.id %}#reviews">
                                     Edit Review <i class="far fa-edit"></i>
                                 </a>
                             </div>
@@ -206,7 +206,7 @@
                             {% csrf_token %}
                             {{ form|crispy }}
                             <div class="text-center mt-3">
-                                <button class="btn bb1 rounded-0 text-uppercase" type="submit">Submit Review</button>
+                                <button class="btn btn-green rounded-2 text-uppercase" type="submit">Submit Review</button>
                             </div>
                         </form>
                     {% endif %}
