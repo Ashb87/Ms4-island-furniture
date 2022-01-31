@@ -263,6 +263,10 @@ a.category-badge > span.badge:hover {
     font-family: "handlee";
 }
 
+.color-container {
+    background-color: rgb(162, 169, 175);
+}
+
 /*--- Products Page ---*/
 
 .review-container {
