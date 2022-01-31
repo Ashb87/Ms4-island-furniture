@@ -3,7 +3,7 @@ from .models import Contact
 
 
 class ContactAdmin(admin.ModelAdmin):
-    list_display = ('email_date', 'query', 'order_number', 'user')
+    list_display = ('email_date', 'query', 'user')
     ordering = ('-email_date', 'user',)
 
 

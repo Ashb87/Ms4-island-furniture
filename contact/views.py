@@ -15,7 +15,6 @@ def contact(request):
             'first_name': request.POST['first_name'],
             'surname': request.POST['surname'],
             'email': request.POST['email'],
-            'order_number': request.POST['order_number'],
             'query': request.POST['query'],
         }
         contact_form = ContactForm(form_data)

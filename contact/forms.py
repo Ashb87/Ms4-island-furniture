@@ -17,8 +17,7 @@ class ContactForm(forms.ModelForm):
         placeholders = {
             'first_name': 'Name',
             'surname': 'Surname',
-            'email': 'email@example.com',
-            'order_number': "You'll find this in your confirmation email ",
+            'email': 'Email Address',
             'query': "Any comments or questions you may have",
         }
         self.fields['first_name'].widget.attrs['autofocus'] = True

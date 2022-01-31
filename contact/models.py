@@ -10,5 +10,4 @@ class Contact(models.Model):
     first_name = models.CharField(max_length=254, null=False, blank=False)
     surname = models.CharField(max_length=254, null=False, blank=False)
     email = models.EmailField(max_length=254, null=False, blank=False)
-    order_number = models.CharField(max_length=254, null=True, blank=True)
     query = models.TextField(null=True, blank=True)
