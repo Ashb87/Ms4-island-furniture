@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Handlee&family=Montserrat:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Handlee&family=Montserrat+Alternates:wght@300&display=swap');
 
 html {
     height: 100%;
@@ -10,7 +10,7 @@ body {
     display: flex;
     flex-direction: column;    
     min-height: 100vh;
-    font-family: 'montserrat';
+    font-family: 'montserrat alternates';
     background-color: #fffffa;
 }
 
@@ -112,7 +112,7 @@ input[name='q']::placeholder {
     outline: none;
     box-shadow: none;
   }
-  
+
 .shop-now-button {
     background: black;
     color: white;
