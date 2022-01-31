@@ -24,12 +24,21 @@
         </div>
 
         <div class="row">
+            <div class="col-10 offset-1">
+                <h3 class="heading-text text-center mt-3">We'd love to hear from you!</h3>
+                <hr class=w-50>
+                <p>For all enquiries please email us using the form below.</p>
+                <p>If enquiring about an exisitng or previous order then please include your order number in the message.</p>
+            </div>
+        </div>
+
+        <div class="row mt-3">
             <div class="col-12 col-md-10 offset-md-1 col-lg-8 offset-lg-2">
                 <form method="POST" action="{% url 'contact' %}" id="contact-form">
                     {% csrf_token %}
                     {{ contact_form|crispy }}
                     <div class="text-center">
-                        <button id="submit-button" class="btn btn-lg btn-green mb-3 p-1">Send! </button>
+                        <button id="submit-button" class="btn btn-green mb-3 px-3">Send </button>
                     </div>
                 </form>
             </div>
