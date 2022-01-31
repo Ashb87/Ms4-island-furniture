@@ -18,22 +18,17 @@
         <div class="row">
             <div class="col">
                 <hr>
-                <h2 class="heading-text">Contact</h2>
+                <h2 class="heading-text">Contact & FAQs</h2>
                 <hr>
             </div>
         </div>
 
         <div class="row">
-            <div class="col-10 offset-1">
+            <div class="col-12 col-lg-6">
                 <h3 class="heading-text text-center mt-3">We'd love to hear from you!</h3>
                 <hr class=w-50>
                 <p>For all enquiries please email us using the form below.</p>
                 <p>If enquiring about an exisitng or previous order then please include your order number in the message.</p>
-            </div>
-        </div>
-
-        <div class="row mt-3">
-            <div class="col-12 col-md-10 offset-md-1 col-lg-8 offset-lg-2">
                 <form method="POST" action="{% url 'contact' %}" id="contact-form">
                     {% csrf_token %}
                     {{ contact_form|crispy }}
@@ -42,8 +37,80 @@
                     </div>
                 </form>
             </div>
-        </div>
+            <div class="col-12 col-lg-6">
+                <h3 class="heading-text text-center mt-3">FAQs</h3>
+                <hr class=w-50>
+
+                <button class="btn faq-btn accordion">How long is delivery?</button>
+                <div class="panel">
+                    <p>Due to all products being handmade after an order is placed, the average delivery timeline is 4 weeks.
+                    </p>
+                </div>
+
+                <button class="btn faq-btn accordion">Can I choose a different colour for my item?</button>
+                <div class="panel">
+                    <p>If you would like a differnet colour to those availible in our selection, please send us a message along with 
+                        your order number and required colour and we will do our best to get it for you.
+                    </p>
+                </div>
+
+                <button class="btn faq-btn accordion">Can I change the size of an item?</button>
+                <div class="panel">
+                    <p>As all of our products are handmade we are happy to build them to specific sizes as long as this is requested upon ordering. </p>
+                </div>
+
+                <button class="btn faq-btn accordion">Is the paint washable?</button>
+                <div class="panel">
+                    <p>All our paint is washable and we recommend cleaning with just a damp cloth. </p>
+                </div>
+
+                <button class="btn faq-btn accordion">What's the best way to care for the wood?</button>
+                <div class="panel">
+                    <p>All our wooden tops are treated with Danish oil before delivery. However we recommend to keep 
+                        treating the wood with oil every couple of months to help preserve the wood. </p>
+                </div>
+
+                <button class="btn faq-btn accordion">What wood do you use?</button>
+                <div class="panel">
+                    <p>All of the wood we use is pine. If you would like your prooduct made with a different wood then 
+                        please get in touch and we will do our best to accomodate. </p>
+                </div>
+
+                <button class="btn faq-btn accordion">Do you deliver outside of the UK?</button>
+                <div class="panel">
+                    <p>At the moment we are only able to deliver to Postcodes in England, Scotland and Wales. </p>
+                </div>
+
+                <button class="btn faq-btn accordion">What do I do if I want a refund?</button>
+                <div class="panel">
+                    <p>In the unlikely event that you are unhappy with your product, then please get in touch through our contact 
+                        page and we will do our best to resolve any issues. </p>
+                </div>
+            </div>
+        </div>        
     </div>
+   
+<!-- Javascript for reviews accordion from w3schools-->    
+<script>
+    var acc = document.getElementsByClassName("accordion");
+    var i;
+    
+    for (i = 0; i < acc.length; i++) {
+      acc[i].addEventListener("click", function() {
+        /* Toggle between adding and removing the "active" class,
+        to highlight the button that controls the panel */
+        this.classList.toggle("active");
+    
+        /* Toggle between hiding and showing the active panel */
+        var panel = this.nextElementSibling;
+        if (panel.style.display === "block") {
+          panel.style.display = "none";
+        } else {
+          panel.style.display = "block";
+        }
+      });
+    }
+    </script>
 
 {% endblock %}
 
