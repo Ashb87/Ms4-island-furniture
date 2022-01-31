@@ -18,3 +18,10 @@ class ContactForm(forms.ModelForm):
             'query': "Any comments or questions you may have",
         }
         self.fields['first_name'].widget.attrs['autofocus'] = True
+        for field in self.fields:
+            if self.fields[field].required:
+                placeholder = placeholders[field]
+                self.fields[field].widget.attrs['required'] = True
+            else:
+                placeholder = placeholders[field]
+            self.fields[field].widget.attrs['placeholder'] = placeholder
