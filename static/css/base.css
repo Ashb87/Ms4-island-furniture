@@ -51,7 +51,7 @@ hr {
 /* Navbar */
 
 .fixed-top {
-    background-color: #484848;
+    background-color: #282828;
 }
 
 .navbar-toggler {
@@ -59,7 +59,7 @@ hr {
 }
 
 .nav-link,
-.navbar-light .navbar-nav .nav-link{
+.navbar-nav .nav-link{
     color: #9e8954;
 }
 
@@ -68,8 +68,8 @@ ul {
 }
 
 .navbar-dark .navbar-nav .nav-link {
-    color: #9e8954;
-    letter-spacing: 2px;
+    color: white;
+    letter-spacing: 1px;
 }
 
 .heading-text,
@@ -89,9 +89,12 @@ ul {
     width: fit-content;
 }
 
-.mobile-header-text {
-    color : white;
-    padding-top: 10px;
+.search-btn {
+    border-radius: 0px 20px 20px 0px !important;
+}
+
+.search-bar {
+    border-radius: 20px 0px 0px 20px !important;
 }
 
 input[name='q']::placeholder {
