@@ -109,7 +109,6 @@ input[name='q']::placeholder {
 
 /* buttons */
 
-
 .search-btn {
     background: #9e8954;
     border: none;
@@ -123,17 +122,6 @@ input[name='q']::placeholder {
     outline: none;
     box-shadow: none;
   }
-
-.shop-now-button {
-    background: black;
-    color: white;
-    min-width: 260px;
-}
-
-.btn-black {
-    background: black;
-    color: white;
-}
 
 .btn-password,
 .btn-green {
@@ -170,7 +158,6 @@ a.category-badge > span.badge:hover {
 .remove-item {
     cursor: pointer;
 }
-
 
 .border-black {
     border: 1px solid black !important;
