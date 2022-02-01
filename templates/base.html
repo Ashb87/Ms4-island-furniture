@@ -100,6 +100,18 @@
                     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#main-nav" aria-controls="main-nav" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="" role="button" ><i class="fa fa-bars" aria-hidden="true" style="color:#e6e6ff"></i></span>
                     </button>
+                    <div>
+                        <a href="{% url 'home' %}" class="nav-link mobile-header-text d-lg-none">
+                            <h4 class="logo-font my-0"><strong>Island</strong> Furniture.Co</h4>
+                        </a>
+                    </div>
+                    <a class="{% if grand_total %}text-primary font-weight-bold{% else %}{% endif %} nav-link d-block d-lg-none" href="{% url 'view_bag' %}">
+                        <div class="mobile-nav-link">
+                            <p class="my-0"></p><i class="fas fa-shopping-bag fa-lg"></i> {{ product_count }}</p>                    
+                        </div>
+                    </a>
+
+
                     {% include 'includes/mobile-top-header.html' %}
                     {% include 'includes/main-nav.html' %}
                 </nav>

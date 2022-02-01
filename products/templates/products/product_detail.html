@@ -12,7 +12,7 @@
 {% block content %}
     <div class="block-container container-fluid">
         <nav aria-label="breadcrumb">
-            <ol class="breadcrumb mt-3 ms-3">
+            <ol class="breadcrumb mt-2">
               <li class="breadcrumb-item"><a href="{% url 'products' %}">All Products</a></li>
               <li class="breadcrumb-item"><a href="{% url 'products' %}?category={{ product.category.name }}">{{ product.category.friendly_name }}</a></li>
               <li class="breadcrumb-item active" aria-current="page">{{ product.name }}</li>
