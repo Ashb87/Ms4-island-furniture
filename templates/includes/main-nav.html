@@ -19,13 +19,6 @@
                 {% endif %}
             </div>
         </li>
-        <li class="list-inline-item">
-            <a class="{% if grand_total %}text-primary font-weight-bold{% else %}{% endif %} nav-link d-block d-lg-none" href="{% url 'view_bag' %}">
-                <div class="mobile-nav-link">
-                    <p class="my-0"></p><i class="fas fa-shopping-bag fa-lg"></i> {{ product_count }}</p>                    
-                </div>
-            </a>
-        </li>
         <li class="nav-item">
             <a href="{% url 'products' %}" class="nav-font font-weight-bold nav-link mr-5">All Products</a>
         </li>
