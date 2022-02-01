@@ -258,13 +258,13 @@ a.category-badge > span.badge:hover {
 }
 
 .color-container {
-    background-color: rgb(162, 169, 175);
+    background-color: #a2a9af;
 }
 
 /*--- Products Page ---*/
 
 .review-container {
-    background-color: #415246;
+    background-color: #a2a9af;
 }
 
 .review-text {
@@ -317,7 +317,7 @@ h5 {
   }
 
 label.requiredField {
-    color: white;
+    color: #3b433c
 }
 
 p.inner-review-text {
