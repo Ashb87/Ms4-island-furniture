@@ -107,6 +107,41 @@ input[name='q']::placeholder {
     width: 1.5rem;
 }
 
+/* Footer */
+
+.footer {
+    background-color: #282828;
+    margin-top: auto;
+}
+
+.footer-heading {
+    margin-bottom: 5px;
+    color: #9e8954;
+}
+
+.footer-txt {
+    margin-bottom: 5px;
+    color: white;
+}
+
+.footer-link {
+    font-size: 16px;
+    color: white;
+}
+
+.footer-link:hover {
+    color: #9e8954;
+    text-decoration: none;
+}
+
+.footer-email {
+    color: white 
+}
+
+.footer-email:hover {
+    color: #daa520;
+}
+
 /* buttons */
 
 .search-btn {
@@ -126,13 +161,13 @@ input[name='q']::placeholder {
 .btn-password,
 .btn-green {
     background: #3b433c;
-    color: #daa520;
+    color: white;
 }
 
 .btn-password:hover,
 .btn-green:hover {
-    background: #484848;
-    color: white;
+    background: #282828;
+    color: #daa520;
     text-decoration: none;
 }
 
@@ -499,7 +534,8 @@ button.faq-btn.active {
     transition: 0.4s;
   }
   
-  /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+  /* Add a background color to the button if it is clicked on (add the .active class with JS), 
+  and when you move the mouse over it (hover) */
   .active, .accordion:hover {
     background-color: #ccc;
   }
@@ -511,41 +547,6 @@ button.faq-btn.active {
     display: none;
     overflow: hidden;
   }
-
-/* Footer */
-
-.footer {
-    background-color: #3b433c;
-    margin-top: auto;
-}
-
-.footer-heading {
-    margin-bottom: 5px;
-    color: #9e8954;
-}
-
-.footer-txt {
-    margin-bottom: 5px;
-    color: #daa520;
-}
-
-.footericon,
-li .list-inline-item .footer-li {
-    font-size: 16px;
-    color: #daa520;
-}
-
-.footericon:hover {
-    color: #9e8954;
-}
-
-.footer-email {
-    color: white 
-}
-
-.footer-email:hover {
-    color: #daa520;
-}
 
 /* -------------------------------- Media Queries */
 
