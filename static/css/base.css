@@ -51,7 +51,7 @@ hr {
 /* Navbar */
 
 .fixed-top {
-    background-color: #282828;
+    background-color: #383838;
 }
 
 .navbar-toggler {
@@ -170,7 +170,7 @@ input[name='q']::placeholder {
 .btn-password:hover,
 .btn-green:hover {
     background: #282828;
-    color: #daa520;
+    color: #daa520 !important;
     text-decoration: none;
 }
 
