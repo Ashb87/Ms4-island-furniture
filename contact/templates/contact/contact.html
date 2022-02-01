@@ -27,7 +27,8 @@
             <div class="col-12 col-lg-6">
                 <h3 class="heading-text text-center mt-3">We'd love to hear from you!</h3>
                 <hr class=w-50>
-                <p>For all enquiries please email us using the form below.</p>
+                <p>For all enquiries please email us using the form below. <br>
+                Alternatively you can call us on 07123456789.</p>
                 <p>If enquiring about an exisitng or previous order then please include your order number in the message.</p>
                 <form method="POST" action="{% url 'contact' %}" id="contact-form">
                     {% csrf_token %}
@@ -72,7 +73,8 @@
 
                 <button class="btn faq-btn accordion">What wood do you use?</button>
                 <div class="panel">
-                    <p>All of the wood we use is pine. If you would like your prooduct made with a different wood then 
+                    <p>Most of the wood we use is pine. But as we use a lot of reclaimed materials we sometimes also use oak, teak and elm.
+                        If you would like your prooduct made with a different wood then 
                         please get in touch and we will do our best to accomodate. </p>
                 </div>
 
