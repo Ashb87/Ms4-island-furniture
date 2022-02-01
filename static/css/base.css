@@ -266,6 +266,8 @@ a.category-badge > span.badge:hover {
 .card-img-top {
     height: 300px;
     object-fit: cover;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .review-container {
@@ -286,7 +288,7 @@ a.category-badge > span.badge:hover {
 }
 
 a.review-link {
-    color: #daa520;
+    color: #3b433c;
 }
 
 h5 {
