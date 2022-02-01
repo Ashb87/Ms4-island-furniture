@@ -263,6 +263,11 @@ a.category-badge > span.badge:hover {
 
 /*--- Products Page ---*/
 
+.card-img-top {
+    height: 300px;
+    object-fit: cover;
+}
+
 .review-container {
     background-color: #a2a9af;
 }
