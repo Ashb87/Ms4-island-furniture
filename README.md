@@ -137,7 +137,52 @@ For this project I have decided to build an e-commerce site based around my dads
 
   * ### Shopping bag page
 
-    * A summary of each item added to the bag. 
+    * A summary of each item added to the bag with a picture, item name and colour chosen. Price of that item and a selector box giving the user the option to add another of the same product and then update the total.
+    * A summary giving the total bag cost, delivery cost and then the total cost of the two combined.
+    * A button to take the user back to the products to carry on shopping.
+    * A button to take the user to the checkout page.
+
+  * ### Checkout page
+
+    * An order summary showing the user everything they have in their bag and the total cost of their purchase.
+    * Delivery form that allows the user to input their delivery information
+    * An option for users with a profile to save their information to their profile.
+    * Stripe input element where users can input ttheir card details to pay for the products.
+    * A button link to take them back to the bag page incase they want to adjust anything.
+    * A complete purchase securely button that allows the user to process their order and complete their purchase.
+    * Text warning alerting the user that payment WILL be taken upon completing their order
+    * A confirmation email will be sent to the user with information about their recent purchase.
+
+  * ### Checkout success / Order history page
+
+    * A total summary of the users order including price, order number, order date and delivery information.
+    * Button at the bottom of the screen showing an option to either navigate back to products page or back to the users profile depending on whether the user completed a new order, or viewed a previous order from the profile screen.
+
+  * ### Sign in / Sign up page
+
+    * On the sign up page the user can register an account by providing an email address, username and password. All required so will show an error if the information is eneterd incorrectly.
+    * On the login page the user can login to their account by entering their username or email address as well as their password.
+    * on the login page the user has link to click if they have forgotten their password where they are then directed to a different page and asked to enter their email address. They will then recieve an email giving them steps to reset their password.
+    * On the login page they also have the option to click the remember me button so they wont have to enter their details everytime.
+
+  * ### Profile page
+
+    * Shows the user all their default delivery details and allows them to update it.
+    * Shows all previous orders from their account with a link to click on previous order numbers which takes them to the history page for that specific order.
+    * A button link allowing the user to change their password.
+
+  * ### Add / Edit products page - Admin only -
+
+    * Add product allows the admin to add a new product to the site. They can enter the category, name, description, price, whehter it can be painted and the otion to add an image.
+    * Buttons to either cancel or complete the action.
+    * On the edit page the item they are editing is autofilled with all its existing information. The admin then has the option to edit any of the fields they require.
+    * Buttons to either cancel or confirm updating the product.
+
+  * ### Contact & FAQ page
+
+    * The page is split down the middle for larger screes with a contact form on the left and the FAQs down the right.
+    * The contact form allows a user to add their name, email address and a message to send to the email address linked to the site. When a message is sent they will recieve a confirmation email to say there message has been recieved.
+    * FAQs displayed in an accordion, so a user can click on any question and the information relating to that question will dropdown below it. 
 
 
     future features.
