@@ -184,7 +184,25 @@ For this project I have decided to build an e-commerce site based around my dads
     * The contact form allows a user to add their name, email address and a message to send to the email address linked to the site. When a message is sent they will recieve a confirmation email to say there message has been recieved.
     * FAQs displayed in an accordion, so a user can click on any question and the information relating to that question will dropdown below it. 
 
+## Future Features I would like to implement
 
-    future features.
-    only add review if purchased that produdct.
+  * ### Adding reviews
+  
+    * Although the site already has a reviews section that is only availible to users with a profile, I would like to take this further and add a function that only allows a user to leave a review for an item they have already purchased.
+  
+  * ### Size options
+
+    * I would like each product to have different sizes availible and for the price to change accordingly.
+
+  * ### Average rating
+
+    * I would like for the rating left by the users to review to return an average rating for that specific item.
+
+  * ### Pagination
+
+  * Pagination on products would allow for only a set number of products to show per page. Although my site doesn't have a large number of products, for e-commerce sites with lots of products, it would not be viable to a user to have to take the time to continuously scroll down without knowing when the product list will end.
+
+  * ### Social media logins
+
+  * Logging in through social media sites is an increasingly popular feature on many sites, implementing this would be good for users to make the logging in process quicker and smoother.
     
