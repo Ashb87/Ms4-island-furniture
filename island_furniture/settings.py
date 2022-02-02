@@ -65,7 +65,7 @@ MIDDLEWARE = [
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
 
-X_FRAME_OPTIONS = 'ALLOW-FROM https://ms4-island-furniture.herokuapp.com/
+X_FRAME_OPTIONS = 'ALLOW-FROM https://ms4-island-furniture.herokuapp.com/'
 
 ROOT_URLCONF = 'island_furniture.urls'
 
