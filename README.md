@@ -200,9 +200,9 @@ For this project I have decided to build an e-commerce site based around my dads
 
   * ### Pagination
 
-  * Pagination on products would allow for only a set number of products to show per page. Although my site doesn't have a large number of products, for e-commerce sites with lots of products, it would not be viable to a user to have to take the time to continuously scroll down without knowing when the product list will end.
+    * Pagination on products would allow for only a set number of products to show per page. Although my site doesn't have a large number of products, for e-commerce sites with lots of products, it would not be viable to a user to have to take the time to continuously scroll down without knowing when the product list will end.
 
   * ### Social media logins
 
-  * Logging in through social media sites is an increasingly popular feature on many sites, implementing this would be good for users to make the logging in process quicker and smoother.
+    * Logging in through social media sites is an increasingly popular feature on many sites, implementing this would be good for users to make the logging in process quicker and smoother.
     
