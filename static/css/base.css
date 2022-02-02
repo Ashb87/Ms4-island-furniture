@@ -222,7 +222,7 @@ a.category-badge > span.badge:hover {
     height: 2px;
 }
 
-/* Convenience classes - colors copied from Bootstrap */
+/* Convenience classes - colors copied from Bootstrap used for toast messages */
 
 .arrow-success {
     border-bottom-color: #28a745 !important;
@@ -405,7 +405,7 @@ select option[value=""] {
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(23, 162, 184, .85);
+    background: rgba(200, 240, 247, 0.85);
     z-index: 9999;
 }
 
