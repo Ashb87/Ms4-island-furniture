@@ -90,3 +90,56 @@ For this project I have decided to build an e-commerce site based around my dads
   The colours used can be viewed below.
 
   <img src="assets/screenshots/colours-used.png" width="450" height="150"> 
+  <br>
+
+* #### Typography
+
+  I have used two fonts across the site, both imported from google fonts. <br>
+  They are **Handlee** and **Montserrat Alternates** <br>
+  The Handlee font has been used for my headings and home link text in the navbar. I chose this because I think it's an attractive font with a bit of character to it and so stands out well. The Montserrat Alterantes font has been used for all other text on the site. I chose this because it's a bit different to standard fonts but is still esily readable and works well with the look of the site and both fonts compliment each other well.
+
+## Features
+
+  * ### Across all pages
+
+    * Responsiveness. The site is responsive to all screen sizes for every page no matter what device it is being viewd on.
+    * Navbar. The navbar is consistent througout the site and changes depending on the scren size. The home link and bag link remain in the header no matter what size screen. Wheres all the other links are hidden on smaller screens and accessible through the burger icon with a dropdown menu.
+    * Footer. The content of the footer remains the same for all screen sizes with links to the contact page, faqs and social media sites. For smaller screens the elements stack on top of each other rather than being side by side with padding and margin added where needed to adapt to the different layout.
+    * Messages/Toasts. Messages and Toasts are used when executing certain actions on the site, such as logging in and out, adding and removing products from the shopping bag, completing a transaction, and for admin actions too like adding and editing products.
+    * Buttons. The buttons used on the site remain the same througout. I decided to keep all my buttons the same to give a consistent look. All the buttons are clear in their intentions so wont add any confusion to thet user by looking the same. 
+
+  * ### Home Page
+
+    * A hero image with a fade in effect to showcase some of the items for sale.
+    * An about us section to give a brief history of the company as well as what they offer today.
+    * Asection to promote the colours and paints used on the products that the customers can chose when purchasing an item.
+
+  * ### Products Page
+
+    * A drop down bar allowing the user to chose in what order the products are displayed. For example by price or category.
+    * An image for each product to show what is on offer which links to the products detail page.
+    * A small bit of information for each product showing its name, price and which category it belongs to.
+    * A back to top button to take the user to the top of the page.
+    * For admin users there is the added option to edit and delete a product.
+
+  * ### Product details Page 
+    
+    * A larger image of the product selected.
+    * A description of the product including the products dimensions.
+    * A drop down box allowing the customer to chose a colour for their product.
+    * A quantity selector box to add one or more of the item to their bag.
+    * A button to add their selections to their bag.
+    * A button to take them back to the products page.
+    * Breadcrumb links below the header to navigate back to all products or the current category they are viewing.
+    * Reviews for the product if any have been added.
+    * The option to add a review if the user is logged in.
+    * Add and edit product libks for admin user only.
+
+  * ### Shopping bag page
+
+    * A summary of each item added to the bag. 
+
+
+    future features.
+    only add review if purchased that produdct.
+    
