@@ -259,4 +259,12 @@ For this project I have decided to build an e-commerce site based around my dads
   * [AWS S3](https://aws.amazon.com/) <br>
      Amazon Web Services, used for hosting images and static files
 
+## Testing 
+
+Find the full Testing Document [here!](TESTING.md)
+
+<hr>
+
+### User stories and site goals
+
     
