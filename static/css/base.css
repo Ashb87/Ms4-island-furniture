@@ -12,7 +12,7 @@ body {
     flex-direction: column;    
     min-height: 100vh;
     font-family: 'montserrat alternates';
-    background-color: #fffffa;
+    background-color: #fffffd;
 }
 
 /* The hero image */
@@ -51,7 +51,7 @@ hr {
 /* Navbar */
 
 .fixed-top {
-    background-color: #383838;
+    background-color: #282828;
 }
 
 .navbar-toggler {
