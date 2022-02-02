@@ -1,15 +1,19 @@
 # Milestone Project Four | Island Furniture
 
-<img src=""> 
+<img src="assets/screenshots/am-i-responsive.png"> 
 
 [View the live project here]() <br>
 
 ## About
 
+<hr>
+
 This website has been created for my Fullstack Framework Milestone 4 project. 
 For this project I have decided to build an e-commerce site based around my dads furniture business. With the hope that in the future it can be used as his own website to advertise and sell his products.
 
 ## User Experience-(UX)
+
+<hr>
 
 ### Target Audience
 
@@ -59,6 +63,8 @@ For this project I have decided to build an e-commerce site based around my dads
 
 ### Design
 
+<hr>
+
   When thinking about the design of the site I knew I wanted something fairly neutral and simple in design to help appeal
   to a wider audience, as the site is not targeted towards any specific demographic. With this in mind I chose a colour scheme that I believe contrasts well whilst looking attractive. On some of the pages the layout is broken into different sections with coloured backgrounds to help distinguish between them. For example on the home page the about section is set on a dark green background, with the section directly below placed on a grey background to give a clear separation. As well as on the products detail page there is review section towards the bottom set on a grey background again to help separate the sections and give a bit of conttast to the site. 
 
@@ -99,6 +105,8 @@ For this project I have decided to build an e-commerce site based around my dads
   The Handlee font has been used for my headings and home link text in the navbar. I chose this because I think it's an attractive font with a bit of character to it and so stands out well. The Montserrat Alterantes font has been used for all other text on the site. I chose this because it's a bit different to standard fonts but is still esily readable and works well with the look of the site and both fonts compliment each other well.
 
 ## Features
+
+<hr>
 
   * ### Across all pages
 
@@ -186,6 +194,8 @@ For this project I have decided to build an e-commerce site based around my dads
 
 ## Future Features I would like to implement
 
+<hr>
+
   * ### Adding reviews
   
     * Although the site already has a reviews section that is only availible to users with a profile, I would like to take this further and add a function that only allows a user to leave a review for an item they have already purchased.
@@ -205,4 +215,48 @@ For this project I have decided to build an e-commerce site based around my dads
   * ### Social media logins
 
     * Logging in through social media sites is an increasingly popular feature on many sites, implementing this would be good for users to make the logging in process quicker and smoother.
+
+## Technologies Used
+
+<hr>
+
+### Languages
+
+  * [HTML5](https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/HTML5) <br>
+  * [CSS3](https://developer.mozilla.org/en-US/docs/Web/CSS) <br>
+  * [JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript) <br>
+  * [Python](https://www.python.org/)
+
+### Frameworks, Libraries and Programs Used
+
+  * [Django](https://www.djangoproject.com/) <br>
+     Django was used as the main framework to build the site
+  * [Bootstrap](https://getbootstrap.com/)<br>
+     Bootstrap was used to help build the structure of the website and add responsiveness across different screen sizes.
+     It also supplied a lot of the styling like paddings and margin as well as built in components such as the modal.
+  * [Balsamiq](https://balsamiq.com/) <br>
+     I used balsamiq to design and draw up my wireframes before starting the project.
+  * [Google Fonts](https://fonts.google.com/) <br>
+     Google fonts was used throughout the project to import my selected fonts.
+  * [Font Awesome](https://fontawesome.com/) <br>
+     Font awesome was used to add all icons used on the site.
+  * [Gitpod](https://www.gitpod.io/) <br>
+     Gitpod was the text editor I used for this project.
+  * [Git](https://git-scm.com/) <br>
+     Git is used as version control software to add, commit and push code to my GitHub repository where the code is then stored.
+  * [GitHub](https://github.com/) <br>
+     I have used GitHub as a remote repository to push and store the committed changes to my project from Git.
+  * [Google Chrome Developer Tools](https://developer.chrome.com/docs/devtools/) <br>
+     I have used Google chromes built in developer tools to help with the styling of the site, selecting colors and to help fix any bugs I found.
+  * [Heroku](https://id.heroku.com) <br>
+     Heroku has been used to deploy my live site.
+  * [SQlite3](https://www.sqlite.org/index.html) <br>
+     Used as the development database
+  * [PostgreSQ](https://www.postgresql.org/) <br>
+     Used as the database for the deployed site.
+  * [Stripe](https://stripe.com/gb) <br>
+     Used to handle card payments through the site.
+  * [AWS S3](https://aws.amazon.com/) <br>
+     Amazon Web Services, used for hosting images and static files
+
     
