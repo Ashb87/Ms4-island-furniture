@@ -13,9 +13,9 @@ For this project I have decided to build an e-commerce site based around my dads
 
 ### Target Audience
 
-    The target audience for my site is for anyone that wants to add their own unique bit of furniture to their home. 
-    As advertised on the site most of the products can be made to measure and availible in many different colours. 
-    Although the furniture wont belong in every home, there is no specific audience as it is mainly down to each individuals personal taste. 
+  The target audience for my site is for anyone that wants to add their own unique bit of furniture to their home. 
+  As advertised on the site most of the products can be made to measure and availible in many different colours. 
+  Although the furniture wont belong in every home, there is no specific audience as it is mainly down to each individuals personal taste. 
 
 ### Business Goals
 
@@ -59,8 +59,34 @@ For this project I have decided to build an e-commerce site based around my dads
 
 ### Design
 
+  When thinking about the design of the site I knew I wanted something fairly neutral and simple in design to help appeal
+  to a wider audience, as the site is not targeted towards any specific demographic. With this in mind I chose a colour scheme that I believe contrasts well whilst looking attractive. On some of the pages the layout is broken into different sections with coloured backgrounds to help distinguish between them. For example on the home page the about section is set on a dark green background, with the section directly below placed on a grey background to give a clear separation. As well as on the products detail page there is review section towards the bottom set on a grey background again to help separate the sections and give a bit of conttast to the site. 
+
+  All text on the site is set to a colour that is easily readable against whichever background it sits on, with the hover effect on the links also still readable while giving a clear sign of it being clickable.
+
 * #### Wireframes
 
   To create my wireframes I used balsamiq. I have done a design for both large and smaller screens to show how the layout of the site will change accordingly with different screen sizes. The links to the wireframes are below. <br>
   * [Large screens](https://github.com/Ashb87/Ms4-island-furniture/blob/main/assets/wireframes/island-furniture-lg-wireframe.png)
   * [Smaller screens](https://github.com/Ashb87/Ms4-island-furniture/blob/main/assets/wireframes/island-furniture-small-wireframe.png) 
+
+  Most of the design of my site has been kept similar to those in the wireframes. As the design went on and with speaking to my mentor, together we made a few adjustments. Mainly this was positioning of buttons and links. For example on my basket/bag page on the wireframe I have the remove item button below the product image. My mentor advised that this should be a smaller link and off to the side so that the customer isn't drawn to the idea of removing their products.
+  I also removed the total cost for each item and decided that just having the total at the bottom of the page was enough.
+  For the navbar, in my wireframes I had kept all the product options in one click down button, however when playing with the design I much preferred the look of having the options displayed on the main navbar.
+  I also decided to add more information to my footer, after browsing other sites offering similar products I found that most have links to their contact and/or faq pages. So I added these and a business address just to balance the footer out and make it look more professional. 
+
+* #### Imagery
+
+  For the imagery of this site I have used a lot of my dads own stock photos as I wanted to make the site as genuine to his business as I could. However as he is not much of a photographer and clearly doesn't have the best camera, some of the photos aren't as good quality as I would like them to be. Because of this I also wanted to add a few products with better images I got online. I also found that due to the way some of the photos are taken and different styles of furniture, a lot of the photos were different sizes and some were portrait while others were landscape. To get around the issue I decided to set a height for the images on the products page so that when browsing the products, all the images look uniform and helps keep the page looking smarter. Although this does mean thaty for some products part of the image is cut off. Then when a product is clicked and you are taken to the product details page the photo is then shown as intended. <br>
+  If a product is added with no image then a default image will be placed there instead.<br>
+  For the hero image on the home page I have used a photo I took myself from where Island Furniture sells some of their products, using a fade in effect when the page is refreshed. I have also used an image on the about section of a picture taken in West Mersea where the business is based. This is to add to the design of the home page and promote where they are from. 
+
+* #### Colour Scheme
+
+  For the colours on this project I knew I didn't want anything to bold or colourful but also wanted it to be attractive and not boring. While at the same time making sure they contrast together nicely. After playing about with a few colours on my navbar I decided to look at [coolors.co](https://coolors.co/) to get some more ideas. When using the generator I had an idea of a dark green so when one came up that I liked I applied it to my navbar. I then added a gold colour to it for the links. I again changed my mind and decied I wanted the navbar and footer to be a dark grey, but still really liked the green. So I have used it throughout the site on different elements. It can be found as a background colour on my home page. It is the cololur to all my buttons and also used on the faq section. I then changed the bottom links of my navbar to white to contrast nicely with the dark grey and also not have to much of the gold. <br>
+  Throughout the site each page has it's own heading and for this I have used the same gold colour as well as for all my hr rules. The majority of the site is set on a white background as I think it gives a clean look with all the elements contrasting nicely against it.<br>
+  For two other sections, (review section and colours used section) I have used a much lighter grey. I did this to break the site up a little bit and a bit of contrast. <br>
+  Overall I think the colours work well together and give an attractive finish that should appeal to most users.<br>
+  The colours used can be viewed below.
+
+  <img src="assets/screenshots/colours-used.png" width="450" height="150"> 
