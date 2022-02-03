@@ -168,7 +168,7 @@ For this project I have decided to build an e-commerce site based around my dads
 
   * ### Sign in / Sign up page
 
-    * On the sign up page the user can register an account by providing an email address, username and password. All required so will show an error if the information is eneterd incorrectly.
+    * On the sign up page the user can register an account by providing an email address, username and password. All of these fields are required so will show an error if the information is eneterd incorrectly.
     * On the login page the user can login to their account by entering their username or email address as well as their password.
     * on the login page the user has link to click if they have forgotten their password where they are then directed to a different page and asked to enter their email address. They will then recieve an email giving them steps to reset their password.
     * On the login page they also have the option to click the remember me button so they wont have to enter their details everytime.
