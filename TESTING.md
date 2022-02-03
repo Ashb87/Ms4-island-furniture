@@ -99,3 +99,55 @@
 
   - To make a purchase a guest it works exactly the same as a user with a profile. They will still get a confirmation email and the details will be stored in the database for the admin to view. When entering their payment details they are shown a link to create a profile telling them they will be bale to save their information if they do so. 
   - I have made test purchases as a guest and everything works as expected.
+
+  **6. to view and ammend my bag at any time.**
+
+  - When a user has added items to their bag they will be displayed with a success message that will have a link to their bag. The bag link in the navbar will also be updated and change the amount of items they have in their bag. At first I had this show the total value of their bag but after viewing other e-commerce stores it seems quite common to just show how many items they have rather than the cost. I decided I preferred this approach so implemented it to my project. 
+  They can also click the bag link in the navbar and this will also take them to their bag page. 
+  - When viewing their bag they will have the option to delete or update the quantity of items. When clicking delete the item will be removed from their bag. Or they can ammend the amount of each item in the bag and click update. This then updates the total value of the bag. This has been tested many times without any issues. 
+
+  <img src="assets/screenshots/bag-page.png" width="300" height="150">
+  <img src="assets/screenshots/bag-success.png" width="300" height="150"> 
+  <br>
+  <img src="assets/screenshots/bag-link.png" width="300" height="150">
+  <img src="assets/screenshots/update-remove.png" width="300" height="150">
+  <br>
+
+  **7. to easily and securely enter my payment details**
+
+  - When making a purchase the user is asked to enter their card details. They will need to enter the long card number, the expiry date and the CVV number. This payment is then authorised through stripe which is a PCI compliant service provider offering high levels of security for all processed payments. 
+
+  **8. email confirmation of my order after completion.**
+
+  - After completing a payment the user will be displayed a success message telling them they will receive a confirmation email for their order. This is then sent to their given email address with details of their purchase. I have tested this with many test purchases and the emails are sent as expaected with no errors. 
+
+  <img src="assets/screenshots/success-email.png" width="150" height="300">
+  <br>
+
+  **9. to read any reviews left by other customers.**
+
+  - When a user clicks on a product and links to the product page, at the bottom of this page there is a review section. If a review has been left then any user is able to read these reviews. I have displayed these using an accordion so the user will see the review name and stars given. They can then click on the review and this will then drop down the rest of the review. As reviews are added they stacked below each other. I have added reviews to check this all works and displays as intended with no issues. 
+
+  <img src="assets/screenshots/reviews.png" width="300" height="150">
+  <br>
+
+  **10. to be able to contact the company directly through the site.**
+
+  - See point 7 from site owner and admin section.
+
+#### Returning Users
+
+  **1. to easily register to the site to have my own profile where my details can be stored.**
+
+  - Through the links in the navber a user can choose to register an account by filling in their details on the form provided. These details are then stored in the database. They will then be sent an email to confirm their registration. I have created various test accounts, deleted them through the django admin and recreated them. I have tested adding a new user with an existing email address or username and as intended an error is shown to the user to say that it already exists.
+
+  <img src="assets/screenshots/sign-up.png" width="300" height="150">
+  <br>
+
+  **2. to easily login and out of my account.**
+
+  - Depending whether a user is logged in or out they can easily do either one by clicking the profile link and following the required steps. A success message is displayed to tell the user if they have signed in or logged out. This all works as expected with no errors. 
+
+  <img src="assets/screenshots/sign-up.png" width="300" height="150">
+  <img src="assets/screenshots/sign-out.png" width="300" height="150">
+  <br>

@@ -168,7 +168,7 @@ input[name='q']::placeholder {
 .btn-password,
 .btn-green {
     background: #3b433c;
-    color: white;
+    color: white !important;
 }
 
 .btn-password:hover,

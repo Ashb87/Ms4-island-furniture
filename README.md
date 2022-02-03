@@ -45,7 +45,7 @@ For this project I have decided to build an e-commerce site based around my dads
      3. the site to be responsive to whichever device I am using.
      4. to easily search for, view and see information on all of the products for sale.
      5. to be able to make a purchase as a guest.
-     6. to view and ammend my basket at any time.
+     6. to view and ammend my bag at any time.
      7. to easily and securely enter my payment details.
      8. email confirmation of my order after completion.
      9. to read any reviews left by other customers.
