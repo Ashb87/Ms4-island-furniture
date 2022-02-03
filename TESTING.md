@@ -151,3 +151,36 @@
   <img src="assets/screenshots/sign-up.png" width="300" height="150">
   <img src="assets/screenshots/sign-out.png" width="300" height="150">
   <br>
+
+  **3. to see details of my previous orders.**
+
+  - When a user is logged in they can click on thier proofile. Here they will see a list of their previous orders. 
+  In the list they can click on the order number and this will link them to the full details of that specific order. This has been tested with different test orders and works with out problems. 
+
+  <img src="assets/screenshots/order-history.png" width="300" height="150">
+  <img src="assets/screenshots/order-history-page.png" width="300" height="150">
+  <br>
+
+  **4. email confirmation upon registering an account and placing any orders.**
+
+  - When a user registers for an account they will be sent a confirmation email with a link to confirm their email address. This has been tested for every account I have created and works without errors. 
+
+  **5. to be able to edit my account details and change my password if I forget it.**
+
+  - A user can click on their profile page and will be shown all their saved information. Here they can edit and update it as they please. The form is prefilled with their existing details. There is also a button at the bottom to allow them to change their password. It will link them to a page where they can enter their existing password and then enter a new one. I have tested this with different users and all works as expected with the new details being saved to the database..
+
+  <img src="assets/screenshots/profile-page.png" width="300" height="150">
+  <img src="assets/screenshots/change-password.png" width="300" height="150">
+  <br>
+
+  **6. to leave reviews on any products I have purchased.**
+
+  If a user is logged in they can go to any product detail page and leave a review using the reviews form. Each added review is then displayed on that products page. This all works without any errors.
+
+  <img src="assets/screenshots/review-form.png" width="300" height="150">
+  <br>
+
+
+
+
+
