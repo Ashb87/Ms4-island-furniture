@@ -235,7 +235,7 @@
 - The breadcrumb links display the current product, a link to the category it belongs to and a link back to all products. All links have been tested and work with no errors.
 
 <img src="assets/screenshots/breadcrumbs.png" width="450" height="225">
-  <br>
+<br>
 
 - Reviews added for products all work and are displayed as intended. 
 - If the user is logged in to their profile then they will be displayed with the review form to fill in and submit. This has been checked for users not logged in to make sure it doesn't still display. I have also added reviews to the site to check it all works as intended.
@@ -287,7 +287,27 @@
 - The contact form has been tested to check it all works as intened and sends confirmation emails to the user. The message is then added to the database and can be viewd in the django admin page. This is all tested and working correctly. 
 - The FAQs are displayed how I intended with the accordion dropdown function working corretly. 
 
+## Code Validators
 
+### HTML validation
+
+- To test my HTML code I used the [W3C Markup Validator Tool](https://validator.w3.org/)
+- There were no errors found 
+
+<img src="assets/screenshots/html-checker.png" width="500" height="250">
+<br>
+
+### CSS validation
+
+- To test my CSS code I used the [W3C CSS Validator Tool](https://jigsaw.w3.org/css-validator/)
+- There were no issues found
+
+<img src="assets/screenshots/css-checker.png" width="500" height="250">
+<br>
+
+### Pep8 validation
+
+- To test my python code I used the [pep8 validator](http://pep8online.com/) <br>
 
 
 
