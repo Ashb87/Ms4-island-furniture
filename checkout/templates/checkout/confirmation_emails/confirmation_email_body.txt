@@ -3,7 +3,7 @@ Hello {{ order.full_name }}!
 This is a confirmation of your order at Isalnd Furniture Co. Your order information is below:
 
 Order Number: {{ order.order_number }}
-Order Item {{ order.product.name }}
+Order Item {{ item.product.name }}
 Order Date: {{ order.date }}
 
 Order Total: £{{ order.order_total }}
