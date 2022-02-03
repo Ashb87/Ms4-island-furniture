@@ -120,7 +120,7 @@ For this project I have decided to build an e-commerce site based around my dads
 
     * A hero image with a fade in effect to showcase some of the items for sale.
     * An about us section to give a brief history of the company as well as what they offer today.
-    * Asection to promote the colours and paints used on the products that the customers can chose when purchasing an item.
+    * A section to promote the colours and paints used on the products that the customers can chose when purchasing an item.
 
   * ### Products Page
 
@@ -141,7 +141,7 @@ For this project I have decided to build an e-commerce site based around my dads
     * Breadcrumb links below the header to navigate back to all products or the current category they are viewing.
     * Reviews for the product if any have been added.
     * The option to add a review if the user is logged in.
-    * Add and edit product libks for admin user only.
+    * Add and edit product links for admin user only.
 
   * ### Shopping bag page
 
@@ -155,9 +155,9 @@ For this project I have decided to build an e-commerce site based around my dads
     * An order summary showing the user everything they have in their bag and the total cost of their purchase.
     * Delivery form that allows the user to input their delivery information
     * An option for users with a profile to save their information to their profile.
-    * Stripe input element where users can input ttheir card details to pay for the products.
+    * Stripe input element where users can input their card details to pay for the products.
     * A button link to take them back to the bag page incase they want to adjust anything.
-    * A complete purchase securely button that allows the user to process their order and complete their purchase.
+    * A *complete order* button that allows the user to process their order and complete their purchase.
     * Text warning alerting the user that payment WILL be taken upon completing their order
     * A confirmation email will be sent to the user with information about their recent purchase.
 
