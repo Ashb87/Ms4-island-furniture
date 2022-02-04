@@ -3,7 +3,9 @@ from .models import Order
 
 
 class OrderForm(forms.ModelForm):
+    """ creates users details table in database """
     class Meta:
+        """ sets fields for table """
         model = Order
         fields = ('full_name', 'email', 'phone_number',
                   'street_address1', 'street_address2',
