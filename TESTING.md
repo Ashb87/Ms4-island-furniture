@@ -305,10 +305,29 @@
 <img src="assets/screenshots/css-checker.png" width="500" height="250">
 <br>
 
+### Javascript validation
+
+- To test my javaScript code I used the [JSHint tool](https://jshint.com/)
+- No errors were found
+
 ### Pep8 validation
 
 - To test my python code I used the [pep8 validator](http://pep8online.com/) <br>
+- All tests passed
 
+Please Note - Warnings and errors were given on most pages due to template logic being used in this project. I reduced the amount of warnings by as many as I could.
+
+## Further Testing
+
+- I have extensively tested every element of my site to check all functions are working as they are intended. I have used many differnet devices and screen sizes to check for responsiveness. 
+- I have tested the site on three of the most popular internet browsers: *Google chrome* *Safari* and *Microsoft edge* with each of the browsers displaying the same and all working correctly. 
+- I have asked friends, family and members of code institutes slack community to test the site for me and have had no issues or errors reported back to me. 
+
+## Known Issues and Bugs
+
+- When scrolling down a page the back to top button works as intended and will take the user back to the top. However I have noticed that if you scroll right to the bottom so that the button is sitting in the footer it seems to become inactive. This is an issues I have noticed late on in the development and am yet to find a solution to the problem. 
+- During development I was testing the function of adding a product. This was all working fine. I then added one of the new items to my bag. Before removing the item from my bag I deleted the product from the database. This then caused an error across all pages of my site. After a lot of retracing my actions and trying to figure what I had done wrong, I decided to use tutor support. They suggested I deleted my session cookies and this then resolved the issue. 
+- The images I have on my home page to promote what paint colours are on offer were displaying correctly when viewing the site form gitpod. But when viewing through the deployed site through heroku they were not being displayed. I thought maybe there was an issue with the link to my aws bucket but other images were showing up so quickly ruled that out. It turned out I was using the wrong syntax for the link and needed to use {{ MEDIA_URL }} rather than the media/img-name that I had been using. 
 
 
 

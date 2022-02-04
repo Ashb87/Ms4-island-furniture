@@ -263,8 +263,6 @@ For this project I have decided to build an e-commerce site based around my dads
 
 Find the full Testing Document [here!](TESTING.md)
 
-<hr>
 
-### User stories and site goals
 
     
