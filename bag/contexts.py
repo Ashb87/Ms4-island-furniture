@@ -1,3 +1,4 @@
+""" imports needed for contexts in bag app """
 from decimal import Decimal
 from django.conf import settings
 from django.shortcuts import get_object_or_404
@@ -5,7 +6,7 @@ from products.models import Product
 
 
 def bag_contents(request):
-
+    """ contexts for bag items """
     bag_items = []
     total = 0
     product_count = 0
