@@ -3,6 +3,7 @@ from django.contrib.auth.models import User
 
 
 class Contact(models.Model):
+    """ Creates Contact table in database """
     user = models.ForeignKey(
         User, on_delete=models.SET_NULL,
         null=True, blank=True)

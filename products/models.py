@@ -1,10 +1,12 @@
+""" Imports for products app models"""
 from django.db import models
-from django.contrib.auth.models import User 
+from django.contrib.auth.models import User
 
 
 class Category(models.Model):
-
+    """ Creates Genre table in database"""
     class Meta:
+        """ changes verbose name to plural """
         verbose_name_plural = 'Categories'
 
     name = models.CharField(max_length=254)
@@ -14,11 +16,14 @@ class Category(models.Model):
         return self.name
 
     def get_friendly_name(self):
+        """ Returns a user friendly name for display purposes """
         return self.friendly_name
 
 
 class Product(models.Model):
-    category = models.ForeignKey('Category', null=True, blank=True, on_delete=models.SET_NULL)
+    """ creates product table in database """
+    category = models.ForeignKey(
+        'Category', null=True, blank=True, on_delete=models.SET_NULL)
     name = models.CharField(max_length=254)
     description = models.TextField()
     has_colors = models.BooleanField(default=False, null=True, blank=True)
@@ -30,11 +35,12 @@ class Product(models.Model):
         return self.name
 
 
-class ProductReview(models.Model): 
+class ProductReview(models.Model):
     """
     Product Review Model
     """
     class Meta:
+        """ creates table for reviews in database """
         ordering = ['-date_added']
         verbose_name_plural = 'Product Reviews'
 

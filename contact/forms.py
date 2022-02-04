@@ -3,8 +3,9 @@ from .models import Contact
 
 
 class ContactForm(forms.ModelForm):
-    
+    """ Creates Contact table in database """
     class Meta:
+        """ excludes user and email date from form """
         model = Contact
         exclude = ('user', 'email_date')
 

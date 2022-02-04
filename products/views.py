@@ -4,8 +4,8 @@ from django.contrib.auth.decorators import login_required
 from django.db.models import Q
 from django.db.models.functions import Lower
 
-from .models import Product, Category, ProductReview  
-from .forms import ReviewForm, ProductForm  
+from .models import Product, Category, ProductReview
+from .forms import ReviewForm, ProductForm
 
 
 def all_products(request):
@@ -31,7 +31,7 @@ def all_products(request):
                 if direction == 'desc':
                     sortkey = f'-{sortkey}'
             products = products.order_by(sortkey)
-            
+
         if 'category' in request.GET:
             categories = request.GET['category'].split(',')
             products = products.filter(category__name__in=categories)
@@ -40,10 +40,12 @@ def all_products(request):
         if 'q' in request.GET:
             query = request.GET['q']
             if not query:
-                messages.error(request, "You didn't enter any search criteria!")
+                messages.error(request, "You didn't enter any \
+                    search criteria!")
                 return redirect(reverse('products'))
-            
-            queries = Q(name__icontains=query) | Q(description__icontains=query)
+
+            queries = Q(name__icontains=query) | Q(
+                description__icontains=query)
             products = products.filter(queries)
 
     current_sorting = f'{sort}_{direction}'
@@ -64,17 +66,17 @@ def product_detail(request, product_id):
     """
 
     product = get_object_or_404(Product, pk=product_id)
-    form = ReviewForm()  
+    form = ReviewForm()
 
     context = {
         'product': product,
-        'form': form,  
+        'form': form,
     }
 
     return render(request, 'products/product_detail.html', context)
 
 
-@login_required  
+@login_required
 def add_review(request, product_id):
     """ Allow user to add review """
 
@@ -100,7 +102,7 @@ def add_review(request, product_id):
     return render(request, context)
 
 
-@login_required  
+@login_required
 def edit_review(request, review_id):
     """ Allow user to edit their review """
 
