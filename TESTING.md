@@ -287,6 +287,13 @@
 - The contact form has been tested to check it all works as intened and sends confirmation emails to the user. The message is then added to the database and can be viewd in the django admin page. This is all tested and working correctly. 
 - The FAQs are displayed how I intended with the accordion dropdown function working corretly. 
 
+## Responsive Testing
+
+- To help with the responsiveness of my project I was using chrome dev tools throughout the build of the site. This helped to see how it would adapt to different screen sizes and devices. It helped me choose appropriate font sizes and headings so to not look too large on the smaller screens and also enabled me to determine at which point I would need to add any media querys for different breakpoints. Thanks to the use of the bootstrap grid system I didn't need to use too many media querys as the site naturally responded well to different screen sizes.
+- As well as using the chrome dev tools I also tested the site myself across as many different devices that I had access to. Theese included **Iphone xr,** **Iphone 12,** **Ipad mini,**
+**Samsung galaxy tablet,** **Apple macbook air** and a 21.5 inch **Apple imac** These devices gave me a good variation of the most common screen sizes used. The site responded well to each of the different screen sizes and displayed as I intended. On top of this I asked friends and family to test the site on their own devies to get even more feedback with devices I don't have access to. 
+- When I felt the site was close to being complete I used the mockup screenshot generator **am I responsive** to get an image of how how the site responds on different size screens across different devices and have used this image at the top of this README file.
+
 ## Code Validators
 
 ### HTML validation
@@ -328,6 +335,9 @@ Please Note - Warnings and errors were given on most pages due to template logic
 - When scrolling down a page the back to top button works as intended and will take the user back to the top. However I have noticed that if you scroll right to the bottom so that the button is sitting in the footer it seems to become inactive. This is an issues I have noticed late on in the development and am yet to find a solution to the problem. 
 - During development I was testing the function of adding a product. This was all working fine. I then added one of the new items to my bag. Before removing the item from my bag I deleted the product from the database. This then caused an error across all pages of my site. After a lot of retracing my actions and trying to figure what I had done wrong, I decided to use tutor support. They suggested I deleted my session cookies and this then resolved the issue. 
 - The images I have on my home page to promote what paint colours are on offer were displaying correctly when viewing the site form gitpod. But when viewing through the deployed site through heroku they were not being displayed. I thought maybe there was an issue with the link to my aws bucket but other images were showing up so quickly ruled that out. It turned out I was using the wrong syntax for the link and needed to use {{ MEDIA_URL }} rather than the media/img-name that I had been using. 
+
+
+
 
 
 
