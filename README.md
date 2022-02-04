@@ -81,6 +81,13 @@ For this project I have decided to build an e-commerce site based around my dads
   For the navbar, in my wireframes I had kept all the product options in one click down button, however when playing with the design I much preferred the look of having the options displayed on the main navbar.
   I also decided to add more information to my footer, after browsing other sites offering similar products I found that most have links to their contact and/or faq pages. So I added these and a business address just to balance the footer out and make it look more professional. 
 
+* #### Database schema
+
+I have created a database schema for the project using [dbdiagram](https://dbdiagram.io/home). See the image below
+
+<img src="assets/screenshots/db-diagram.png" width="500" height="250">
+<br>
+
 * #### Imagery
 
   For the imagery of this site I have used a lot of my dads own stock photos as I wanted to make the site as genuine to his business as I could. However as he is not much of a photographer and clearly doesn't have the best camera, some of the photos aren't as good quality as I would like them to be. Because of this I also wanted to add a few products with better images I got online. I also found that due to the way some of the photos are taken and different styles of furniture, a lot of the photos were different sizes and some were portrait while others were landscape. To get around the issue I decided to set a height for the images on the products page so that when browsing the products, all the images look uniform and helps keep the page looking smarter. Although this does mean thaty for some products part of the image is cut off. Then when a product is clicked and you are taken to the product details page the photo is then shown as intended. <br>
