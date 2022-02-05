@@ -11,6 +11,7 @@
 
 {% block content %}
     <div class="block-container container-fluid">
+        <!-- Breadcrumb links -->
         <nav aria-label="breadcrumb">
             <ol class="breadcrumb mt-2">
               <li class="breadcrumb-item"><a href="{% url 'products' %}">All Products</a></li>
@@ -19,6 +20,7 @@
             </ol>
         </nav>
         <div class="row">
+            <!-- Product image -->
             <div class="col-12 col-md-6 col-lg-4 offset-lg-2">
                 <div class="image-container my-5">
                     {% if product.image %}
@@ -32,6 +34,7 @@
                     {% endif %}
                 </div>
             </div>
+            <!-- Product information -->
             <div class="col-12 col-md-6 col-lg-4">
                 <div class="product-details-container mb-5 mt-md-5">
                     <p class="mb-0">{{ product.name }}</p>
@@ -79,6 +82,7 @@
                             {% with product.has_colors as c %}
                             {% if c %}
                                 <div class="col-12">
+                                    <!-- Colour selector -->
                                     <p><strong>Colour:</strong></p>
                                     <select class="form-control rounded-0 w-50" name="product_color" id='id_product_color'>
                                         <option value="wood_stain" selected>Wood Stain</option>
@@ -92,6 +96,7 @@
                                 </div>
                             {% endif %}
                             <div class="col-12">
+                                <!-- Quantity selector -->
                                 <p class="mt-3"><strong>Quantity:</strong></p>
                                 <div class="form-group w-50">
                                     <div class="input-group">

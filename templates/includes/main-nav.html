@@ -6,6 +6,7 @@
                     <div><i class="fas fa-user fa-lg"></i></div>
                 </div>
             </a>
+            <!-- Profile link and dropdowns-->
             <div class="dropdown-menu border-0" aria-labelledby="user-options-nav">
                 {% if request.user.is_authenticated %}
                     {% if request.user.is_superuser %}
@@ -19,10 +20,12 @@
                 {% endif %}
             </div>
         </li>
+        <!-- All products -->
         <li class="nav-item">
             <a href="{% url 'products' %}" class="nav-font font-weight-bold nav-link mr-5">All Products</a>
         </li>
 
+        <!-- Home interiors dropdown menu -->
         <li class="nav-item dropdown">
             <a class="nav-font font-weight-bold nav-link mr-5" href="#" id="home-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 Home Interiors
@@ -36,6 +39,7 @@
             </div>
         </li>
 
+        <!-- Retail dropdown menu -->
         <li class="nav-item dropdown">
             <a class="nav-font font-weight-bold nav-link mr-5" href="#" id="retail-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 Retail
@@ -47,6 +51,7 @@
             </div>
         </li>
 
+        <!-- Special offers dropdown menu -->
         <li class="nav-item dropdown">
             <a class="nav-font font-weight-bold nav-link mr-5" href="#" id="specials-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 Special Offers
