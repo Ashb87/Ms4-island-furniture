@@ -2,14 +2,46 @@
 
 <img src="assets/screenshots/am-i-responsive.png"> 
 
-[View the live project here]() <br>
+[View the live project here](https://ms4-island-furniture.herokuapp.com/) <br>
 
-## About
+## Overview
 
 <hr>
 
 This website has been created for my Fullstack Framework Milestone 4 project. 
 For this project I have decided to build an e-commerce site based around my dads furniture business. With the hope that in the future it can be used as his own website to advertise and sell his products.
+
+## Contents
+
+  * [User Experience](#user-experience-ux)
+    - [Business Goals](#business-goals)
+    - [User Stories](#user-stories)
+    - [Design](#design)
+      - [Wireframes](#wireframes)
+      - [Data Schema](#data-schema)
+      - [Imagery](#imagery)
+      - [Color Scheme](#color-scheme)
+      - [Typography](#typography)
+  
+  * [Features](#features)
+  * [Future Features](#future-features-i-would-like-to-implement)
+  
+  * [Technologies Used](#technologies-used)
+    - [Languages](#languages)
+    - [Frameworks, Libraries and Programs](#frameworks-libraries-and-programs-used)
+  
+  * [Testing](#testing)
+    - [Testing User Stories and Site Goals](#testing-user-stories-and-site-goals)
+    - [Features Testing](#features-testing)
+    - [Responsive Testing](#responsive-testing)
+    - [Code Validators](#code-validators)
+    - [Lighthouse Testing](#lighthouse-testing)
+    - [Further Testung](#further-testing)
+    - [Known Issues and Bugs](#known-issues-and-bugs)
+  
+  * [Deployment](#deployment)
+  
+  * [Credits](#credits)
 
 ## User Experience-(UX)
 
@@ -81,7 +113,7 @@ For this project I have decided to build an e-commerce site based around my dads
   For the navbar, in my wireframes I had kept all the product options in one click down button, however when playing with the design I much preferred the look of having the options displayed on the main navbar.
   I also decided to add more information to my footer, after browsing other sites offering similar products I found that most have links to their contact and/or faq pages. So I added these and a business address just to balance the footer out and make it look more professional. 
 
-* #### Database schema
+* #### Data schema
 
 I have created a database schema for the project using [dbdiagram](https://dbdiagram.io/home). See the image below
 
@@ -451,4 +483,4 @@ These were:
 - Friends and Family who have taken their time to offer advice and feedback duirng the devolopment of my project.
 - [w3schools](https://www.w3schools.com/) for all its useful information in helping to build my project.
 
-    
+[Back to top](#overview)

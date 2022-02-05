@@ -2,11 +2,19 @@
 
 ## Testing Document
 
+* [Testing](#testing)
+    - [User Stories](#user-stories)
+    - [Features Testing](#features)
+    - [Responsive Testing](#responsive-testing)
+    - [Code Validators](#code-validators)
+    - [Further Testung](#further-testing)
+    - [Known Issues and Bugs](#known-issues-and-bugs)
+
 <hr>
 
 ## User stories
 
-#### Site owner and Admin
+### Site owner and Admin
 
   **1. the site to be attractive, responsive and easy to navigate for the user.**
 
@@ -68,7 +76,7 @@
   <img src="assets/screenshots/email-success.png" width="450" height="225"> 
   <br>
 
-#### General visitors
+### General visitors
 
   **1. the site to be clear as to what it is selling/providing.**
 
@@ -135,7 +143,7 @@
 
   - See point 7 from site owner and admin section.
 
-#### Returning Users
+### Returning Users
 
   **1. to easily register to the site to have my own profile where my details can be stored.**
 
@@ -182,7 +190,7 @@
 
 ## Features
 
-#### All pages
+### All pages
 
   **- Responsiveness**
 
@@ -211,21 +219,21 @@
 
   - All buttons are working correctly and linking to the correct urls. 
 
-#### Home page
+### Home page
 
   - The hero image effect takes effect when the page is refreshed or the user links back to the home page.
 
   <img src="assets/screenshots/hero-image.png" width="450" height="225">
   <br>
 
-#### Products page
+### Products page
 
  - The drop down bar allows the user to choose in what order they would like to view the sites products. This works as expected and changes the order of products depending on the users selection.
  - The product image on the products page will link the user the detail page of that specific product. This has been tested many times and works without errors. 
  - When viewing on smaller screens and the products are stacked on top of each other the back to the top button is a quick way for the user to get back to the top of the screen without scrolling back up. This is working as intended. 
  - Edit and delete buttons added to the products for admin users only. this has been tested extensively and works with no issues. 
 
-#### Products detail page
+### Products detail page
 
 - On the products detail page the image appears larger than on the all products screen. This can then be clicked again to view an even larger version of the image, opened on a separate page. 
 - There is a drop down box that allows the user to pick a colour for their product. When selected this is added on to their order details. I have tested this many times and works with no issues. 
@@ -241,14 +249,14 @@
 - If the user is logged in to their profile then they will be displayed with the review form to fill in and submit. This has been checked for users not logged in to make sure it doesn't still display. I have also added reviews to the site to check it all works as intended.
 - The add and edit product buttons are only visible to an admin user. This has ben tested by checking with regular users. Buttons link to correct urls and work as intended with no issues. 
 
-#### Shopping bag page
+### Shopping bag page
 
 - All correct information for each added product is displayed. With the option to add more or remove items tested and working. 
 - The value of the bag is added correctly taking in to account a delivery charge if there is one. I have tested this by editing the bag to check it all updates correctly and uses the free delivery threshold accordingly. 
 - Button link to continue shopping takes user back to the all products page. Works correctly. 
 - Button link to the checkout page works and directs user to secure checkout page. 
 
-#### Checkout page
+### Checkout page
 
 - Order summary shows the correct total value of the bag. I have tested this many times with different products to make sure it is all workng correctly. 
 - The delivery information form is rendered using crispy forms and displays as intended and checks on the required fields to make sure they are filled in correctly. 
@@ -257,32 +265,32 @@
 - The complete order button finishes the checkout procedure and processes the payment with out any issues. I have tested this many times to make sure it is all working correctly. 
 - Confirmation emails are sent to the users given email address detailing the order they have just placed. This is working with no issues. 
 
-#### Checkout success / Order history page
+### Checkout success / Order history page
 
 - After completing an order the user is taken to the checkout success page where they will have a full description of all the order details. This has been tested many times and always returns the correct information and works as it should. 
 - Buttons at the bottom of the screen depending on how the user got to that page (either from ordering a product or their profile page) will navigate back to differnt urls. These buttons display correctly on the right page and link the user to the correct url. 
 
-#### Sign in / Sign up page
+### Sign in / Sign up page
 
 - I have tested the sign up page with lots of different users to check it all works correctly. Everyting works as expected and the user profile is added to the database. 
 - Logging in works with no issues. This has been tested many times for all the differnet accounts with no issues. 
 - Users trying to log in can click a link if they have forgotten their password. This link directs them to a new page where they will need ot enter their email address. I have tested changing passwords for different users and all works correctly. 
 - Clicking the remember me button works. I have tested this for a couple of the users and tried logging in again. This works as I would expect it to. 
 
-#### Profile page
+### Profile page
 
 - Users can view all their delivery information on their profile page and update it as they would like to. This has been tested for different users. Everything updates and saves to the database with no issues.
 - A list of all previous orders is also displayed on the users profile page. The oorder number link works and direct the user to the order history of each specific order number. This all works as intended. 
 - The button at the bottom of the page allows the user to change their password. It will direct them to a new page where they can change their password. This has been tested for different users and all works correctly. 
 
-#### Add / Edit products page - Admin only -
+### Add / Edit products page - Admin only -
 
 - Adding a product to the site is only available for admin users. I have tested this many times and added most of the products to the site this way. This was a great way to check it was all working correctly. I had no issues or errors with adding products this way. 
 - The cancel or complete buttons work as intended woth no issues. 
 - When editing a product the form is prefilled with the existing product information. This can be changed by ammending any of the fields and confirming the changes. This has also been tested many times and works without any issues or errors. 
 - The buttons to either cancel or confirm the changes work as intended. 
 
-#### Contact & FAQ page
+### Contact & FAQ page
 
 - The contact form has been tested to check it all works as intened and sends confirmation emails to the user. The message is then added to the database and can be viewd in the django admin page. This is all tested and working correctly. 
 - The FAQs are displayed how I intended with the accordion dropdown function working corretly. 
@@ -348,6 +356,8 @@ def entry_not_found(request, exception, template_name='404.html'):
 in the home app views folder. <br>
 I added this code and retested it all but still had no luck. I decided to give tutor support another go and this was when the tutor (Kevin) spotted a very simple error where I had missed out my `{% block content %}` tags at the top of the template, and then where I had copied and pasted the templates for the other error pages they were all the same. I added it back in to the code, retested it all and everything then worked as expected.
 
+
+Return to [README](README.md)
 
 
 
