@@ -1,10 +1,18 @@
 {% extends "base.html" %}
 {% load static %}
 
+{% block page_header %}
+    <div class="container header-container">
+        <div class="row">
+            <div class="col"></div>
+        </div>
+    </div>
+{% endblock %}
+
 {% block content %}
 
 <div class="container-fluid">
-    <div class="row-products">
+    <div class="row">
         <div class="col text-center pb-1">
             <h2 class="logo-font">Error 404</h2>
         </div>
@@ -12,15 +20,15 @@
 
     <div class="container general-container">
         <div class="row">
-            <div class="col">
+            <div class="col mt-2">
                 <p>
-                    Oh, no! We couldn't find what you were looking for...
+                    404... We couldn't find what you were looking for...
                     But we have a lot of other amazing products and content on our website.
                     What would you like to do next?
                 </p>
                 <div class="error-page-ctas mt-4">
-                    <a class="cta cta-black mr-2 mb-2 d-inline-block" href="{% url 'products' %}">Shop more</a>
-                    <a class="cta cta-white d-inline-block" href="{% url 'home' %}">Back to homepage</a>
+                    <a class="btn btn-green mr-2 mb-2 d-inline-block" href="{% url 'products' %}">Shop more</a>
+                    <a class="btn btn-green d-inline-block" href="{% url 'home' %}">Back to homepage</a>
                 </div>
             </div>
         </div>
