@@ -430,4 +430,25 @@ If you want to save images to your S3 bucket, you will need to do the following;
 2. Click “Create Folder”, call it ‘media’ and confirm with the second “Create Folder” button.
 3. When you are in this folder, click “Upload”, then “Add Files” or “Add Folder”, then “Upload”.
 
+## Credits
+
+### Code and Content
+- [Bootstrap](https://getbootstrap.com/) was used for the structure and layout of the site.
+- [Stackoverflow](https://stackoverflow.com/) was used to help find solutions to the issues I had whilst building my project.
+- [Code Institute](https://codeinstitute.net/) boutique ado project was used a lot throughout the project to help with functionality across the site.
+- [Youtube](https://www.youtube.com/) was used to help put together my contact model and views.
+These were:
+-[B learning club](https://www.youtube.com/watch?v=lSgRWA4PMt4&t=477s)
+-[Hacker shack](https://www.youtube.com/watch?v=94ylwr2r3Hs&t=831s)
+-[Dennis Ivy](https://www.youtube.com/watch?v=gpTrmDpadZY)
+
+
+### Acknowledgements
+- The **Mini Feb 20201** team on slack for all the feedback and support given to each other.
+- The Code Institute slack community for all the helpful hints and tips.
+- All the tutors at Code Institute who helped me fix issues along the way. You saved me from a few breakdowns!!
+- My mentor Rohit Sharma for helping and giving advice for my third milestone project.
+- Friends and Family who have taken their time to offer advice and feedback duirng the devolopment of my project.
+- [w3schools](https://www.w3schools.com/) for all its useful information in helping to build my project.
+
     
