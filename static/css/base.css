@@ -296,11 +296,24 @@ h5 {
     padding-left: 0;
 }
 
-.modal-title {
-    color: black
+/* Modal to confirm deletion of product */
+
+.modal-header,
+.modal-body,
+.modal-footer {
+    background-color: #484848;
+    color: #daa520 !important;
+    border-top: none;
+    border-bottom: none;
 }
 
-/* Modal to confirm deletion of product */
+.modal-content {
+    border: 1px solid #daa520;
+}
+
+.close {
+    color: #daa520;
+}
 
 .delete-btn {
     background: none!important;
