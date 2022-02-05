@@ -335,6 +335,18 @@ Please Note - Warnings and errors were given on most pages due to template logic
 - When scrolling down a page the back to top button works as intended and will take the user back to the top. However I have noticed that if you scroll right to the bottom so that the button is sitting in the footer it seems to become inactive. This is an issues I have noticed late on in the development and am yet to find a solution to the problem. 
 - During development I was testing the function of adding a product. This was all working fine. I then added one of the new items to my bag. Before removing the item from my bag I deleted the product from the database. This then caused an error across all pages of my site. After a lot of retracing my actions and trying to figure what I had done wrong, I decided to use tutor support. They suggested I deleted my session cookies and this then resolved the issue. 
 - The images I have on my home page to promote what paint colours are on offer were displaying correctly when viewing the site form gitpod. But when viewing through the deployed site through heroku they were not being displayed. I thought maybe there was an issue with the link to my aws bucket but other images were showing up so quickly ruled that out. It turned out I was using the wrong syntax for the link and needed to use {{ MEDIA_URL }} rather than the media/img-name that I had been using. 
+- when creating my error pages and then testing them I was getting an internal server error instead of being directed to the correct error template. I was having trouble trying to see where the problem was coming from and so tried setting the debug back to true and see if django would show me an error message that could help. I had no luck with this so contacted tutor support. I was advised to try adding some extra code to render the error pages which was 
+```
+handler404 = 'your_app_name.views.entry_not_found'
+in the base urls.py, 
+```
+and then 
+```
+def entry_not_found(request, exception, template_name='404.html'):
+    return render(request, template_name)
+```
+in the home app views folder. <br>
+I added this code and retested it all but still had no luck. I decided to give tutor support another go and this was when the tutor (Kevin) spotted a very simple error where I had missed out my `{% block content %}` tags at the top of the template, and then where I had copied and pasted the templates for the other error pages they were all the same. I added it back in to the code, retested it all and everything then worked as expected.
 
 
 
