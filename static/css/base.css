@@ -105,6 +105,14 @@ input[name='q']::placeholder {
     color: #aab7c4;
 }
 
+.dropdown-menu {
+    background-color: grey;
+}
+
+.dropdown-item {
+    color: white;
+}
+
 /* from Bulma */
 .icon {
     align-items: center;
@@ -178,11 +186,6 @@ input[name='q']::placeholder {
     text-decoration: none;
 }
 
-
-a.category-badge > span.badge:hover {
-    background: #212529 !important;
-    color: #fff !important;
-}
 
 /* back to top button */
 .btt-button {
