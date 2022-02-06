@@ -150,6 +150,8 @@ I have created a database schema for the project using [dbdiagram](https://dbdia
 <img src="assets/screenshots/db-diagram.png" width="500" height="250">
 <br>
 
+For the data schema I have made tables consisting of the different models I have across the project apps. I have then linked the models together where they relate to each other. For example the user profile is linked to the reviews, contact and checkout models. Linked together by the users name. The order model and order_line_item model are linked by total cost of the product  which in turn results in a grand total for the checkout process. Products and categories are linked together by the product name which in turn are linked again to the reviews model, checkout and order_line_item. 
+
 ### Apps and Models
 
 #### Checkout App
