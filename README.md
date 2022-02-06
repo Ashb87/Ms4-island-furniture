@@ -405,6 +405,23 @@ DATABASES = {
 14. Before committing and pushing these changes to GitHub, make sure you uncomment your `DATABASES` code in `settings.py` and amend your code to ensure your database url doesn’t get accidentally committed to GitHub!
 •	Once this is done, `add`, `commit` and `push` your changes to GitHub
 
+
+Make sure that all of your configuration variables are up to date on Heroku. You can do this by going in to the settings tab and clicking on Reveal Config Vars. This is the list of variables you will need, these variables also include ones for AWS which the following section will go over.
+
+| Key                   | Value                    |
+| --------------------- |--------------------------|
+| AWS_ACCESS_KEY_ID     | `aws_access_key`         |
+| AWS_SECRET_ACCESS_KEY | `aws_secret_access_key`  |
+| DATABASE_URL          | `auto-generated`         |
+| EMAIL_HOST_PASS       | `email_key`              |
+| EMAIL_HOST_USER       | `your_email`             |
+| SECRET_KEY            | `secret_key`             |
+| STRIPE_PUBLIC_KEY     | `your_stripe_public_key` |
+| STRIPE_SECRET_KEY     | `your_stripe_secret_key` |
+| STRIPE_WH_SECRET      | `stripe_webhook_key`     |
+| USE_AWS               | `True`                   |
+
+
 ## AWS
 
 ### Setting up
