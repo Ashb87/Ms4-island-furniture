@@ -34,13 +34,6 @@ For this project I have decided to build an e-commerce site based around my dads
     - [Frameworks, Libraries and Programs](#frameworks-libraries-and-programs-used)
   
   * [Testing](#testing)
-    - [Testing User Stories and Site Goals](#testing-user-stories-and-site-goals)
-    - [Features Testing](#features-testing)
-    - [Responsive Testing](#responsive-testing)
-    - [Code Validators](#code-validators)
-    - [Lighthouse Testing](#lighthouse-testing)
-    - [Further Testung](#further-testing)
-    - [Known Issues and Bugs](#known-issues-and-bugs)
   
   * [Deployment](#deployment)
 
