@@ -18,10 +18,13 @@ For this project I have decided to build an e-commerce site based around my dads
     - [User Stories](#user-stories)
     - [Design](#design)
       - [Wireframes](#wireframes)
-      - [Data Schema](#data-schema)
       - [Imagery](#imagery)
       - [Color Scheme](#color-scheme)
       - [Typography](#typography)
+
+  * [Structure](#structure)
+    - [Data Schema](#data-schema)
+    - [Apps and Models](#apps-and-models)
   
   * [Features](#features)
   * [Future Features](#future-features-i-would-like-to-implement)
@@ -102,7 +105,7 @@ For this project I have decided to build an e-commerce site based around my dads
 
   All text on the site is set to a colour that is easily readable against whichever background it sits on, with the hover effect on the links also still readable while giving a clear sign of it being clickable.
 
-* #### Wireframes
+* ### Wireframes
 
   To create my wireframes I used balsamiq. I have done a design for both large and smaller screens to show how the layout of the site will change accordingly with different screen sizes. The links to the wireframes are below. <br>
   * [Large screens](https://github.com/Ashb87/Ms4-island-furniture/blob/main/assets/wireframes/island-furniture-lg-wireframe.png)
@@ -113,20 +116,13 @@ For this project I have decided to build an e-commerce site based around my dads
   For the navbar, in my wireframes I had kept all the product options in one click down button, however when playing with the design I much preferred the look of having the options displayed on the main navbar.
   I also decided to add more information to my footer, after browsing other sites offering similar products I found that most have links to their contact and/or faq pages. So I added these and a business address just to balance the footer out and make it look more professional. 
 
-* #### Data schema
-
-I have created a database schema for the project using [dbdiagram](https://dbdiagram.io/home). See the image below
-
-<img src="assets/screenshots/db-diagram.png" width="500" height="250">
-<br>
-
-* #### Imagery
+* ### Imagery
 
   For the imagery of this site I have used a lot of my dads own stock photos as I wanted to make the site as genuine to his business as I could. However as he is not much of a photographer and clearly doesn't have the best camera, some of the photos aren't as good quality as I would like them to be. Because of this I also wanted to add a few products with better images I got online. I also found that due to the way some of the photos are taken and different styles of furniture, a lot of the photos were different sizes and some were portrait while others were landscape. To get around the issue I decided to set a height for the images on the products page so that when browsing the products, all the images look uniform and helps keep the page looking smarter. Although this does mean thaty for some products part of the image is cut off. Then when a product is clicked and you are taken to the product details page the photo is then shown as intended. <br>
   If a product is added with no image then a default image will be placed there instead.<br>
   For the hero image on the home page I have used a photo I took myself from where Island Furniture sells some of their products, using a fade in effect when the page is refreshed. I have also used an image on the about section of a picture taken in West Mersea where the business is based. This is to add to the design of the home page and promote where they are from. 
 
-* #### Colour Scheme
+* ### Colour Scheme
 
   For the colours on this project I knew I didn't want anything to bold or colourful but also wanted it to be attractive and not boring. While at the same time making sure they contrast together nicely. After playing about with a few colours on my navbar I decided to look at [coolors.co](https://coolors.co/) to get some more ideas. When using the generator I had an idea of a dark green so when one came up that I liked I applied it to my navbar. I then added a gold colour to it for the links. I again changed my mind and decied I wanted the navbar and footer to be a dark grey, but still really liked the green. So I have used it throughout the site on different elements. It can be found as a background colour on my home page. It is the cololur to all my buttons and also used on the faq section. I then changed the bottom links of my navbar to white to contrast nicely with the dark grey and also not have to much of the gold. <br>
   Throughout the site each page has it's own heading and for this I have used the same gold colour as well as for all my hr rules. The majority of the site is set on a white background as I think it gives a clean look with all the elements contrasting nicely against it.<br>
@@ -137,11 +133,55 @@ I have created a database schema for the project using [dbdiagram](https://dbdia
   <img src="assets/screenshots/colours-used.png" width="450" height="150"> 
   <br>
 
-* #### Typography
+* ### Typography
 
   I have used two fonts across the site, both imported from google fonts. <br>
   They are **Handlee** and **Montserrat Alternates** <br>
   The Handlee font has been used for my headings and home link text in the navbar. I chose this because I think it's an attractive font with a bit of character to it and so stands out well. The Montserrat Alterantes font has been used for all other text on the site. I chose this because it's a bit different to standard fonts but is still esily readable and works well with the look of the site and both fonts compliment each other well.
+
+## Structure
+
+### Data schema
+
+I have created a database schema for the project using [dbdiagram](https://dbdiagram.io/home). See the image below
+
+<img src="assets/screenshots/db-diagram.png" width="500" height="250">
+<br>
+
+### Apps and Models
+
+#### Checkout App
+  
+- Order Model
+  - Holds information for each order which is created when a user completes the checkout process.
+
+-  OrderLineItem Model
+  - Contains information for each product added to the bag.
+
+#### Contact App
+
+- Contact Model
+  - Holds information for each contact message sent to admin
+
+#### Products App
+
+- Category Model 
+  - Stores the product categories
+
+- Products Model
+  - Stores information for individual products
+
+- ProductReview Model
+  - Stores the reviews added by users to products
+
+#### Profiles App
+
+- UserProfile Model
+  - This model securely stores information on each registered user. Information is pulled from this Model to pre-fill the personal information form on the checkout page if the user is logged in, and has information saved.
+
+Models I have added myself for the project can be found in the products app (ProductReview) and the contact app (Contact).
+
+
 
 ## Features
 
