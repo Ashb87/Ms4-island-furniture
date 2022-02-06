@@ -223,8 +223,10 @@
 ### Home page
 
   - The hero image effect takes effect when the page is refreshed or the user links back to the home page.
+  - The carousel has a selection of 3 images that scroll automatically or cal be clicked through by the user. 
 
   <img src="assets/screenshots/hero-image.png" width="450" height="225">
+  <img src="assets/screenshots/carousel.png" width="450" height="225">
   <br>
 
 ### Products page
@@ -370,7 +372,8 @@ Please Note - Warnings and errors were given on most pages due to template logic
 
 ## Known Issues and Bugs
 
-- When scrolling down a page the back to top button works as intended and will take the user back to the top. However I have noticed that if you scroll right to the bottom so that the button is sitting in the footer it seems to become inactive. This is an issues I have noticed late on in the development and am yet to find a solution to the problem. 
+- When scrolling down a page on my laptop, the back to top button works as intended and will take the user back to the top of the screen. However I have noticed that if you scroll right to the bottom so that the button is sitting in the footer it seems to become inactive. When checking this on my phone however this doesn't happen and the button is still active in the footer. This is an issues I have noticed late on in the development and am yet to find a solution to the problem. 
+- Another issue I have noticed with the back to top button is that when I added the CSS property `scroll-behaviour: smooth` it works perfectly well on my laptop and scrolls smoothly to the top. However when using it on my phone it still snaps back to the top without a smooth scroll. When trying to find a solution for this I read on stack-overflow that the `scroll-behaviour` property doesn't work on safari browsers. I then checked on safari on my laptop and sure enough it didn't work there either. So I have left this as it is for now and will look to see if I can find a solution for it at a later date.  
 - During development I was testing the function of adding a product. This was all working fine. I then added one of the new items to my bag. Before removing the item from my bag I deleted the product from the database. This then caused an error across all pages of my site. After a lot of retracing my actions and trying to figure what I had done wrong, I decided to use tutor support. They suggested I deleted my session cookies and this then resolved the issue. 
 - The images I have on my home page to promote what paint colours are on offer were displaying correctly when viewing the site form gitpod. But when viewing through the deployed site through heroku they were not being displayed. I thought maybe there was an issue with the link to my aws bucket but other images were showing up so quickly ruled that out. It turned out I was using the wrong syntax for the link and needed to use {{ MEDIA_URL }} rather than the media/img-name that I had been using. 
 - when creating my error pages and then testing them I was getting an internal server error instead of being directed to the correct error template. I was having trouble trying to see where the problem was coming from and so tried setting the debug back to true and see if django would show me an error message that could help. I had no luck with this so contacted tutor support. I was advised to try adding some extra code to render the error pages which was 
@@ -385,6 +388,7 @@ def entry_not_found(request, exception, template_name='404.html'):
 ```
 in the home app views folder. <br>
 I added this code and retested it all but still had no luck. I decided to give tutor support another go and this was when the tutor (Kevin) spotted a very simple error where I had missed out my `{% block content %}` tags at the top of the template, and then where I had copied and pasted the templates for the other error pages they were all the same. I added it back in to the code, retested it all and everything then worked as expected.
+
 
 
 Return to [README](README.md)

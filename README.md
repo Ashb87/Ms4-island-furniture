@@ -198,6 +198,7 @@ Models I have added myself for the project can be found in the products app (Pro
   * ### Home Page
 
     * A hero image with a fade in effect to showcase some of the items for sale.
+    * A carousel that showcases some of the furniture that is availble to buy in the products section. 
     * An about us section to give a brief history of the company as well as what they offer today.
     * A section to promote the colours and paints used on the products that the customers can chose when purchasing an item.
 
