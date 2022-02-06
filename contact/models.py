@@ -1,3 +1,4 @@
+""" Imports needed for contact models """
 from django.db import models
 from django.contrib.auth.models import User
 
