@@ -40,7 +40,7 @@
                             {% if search_term or current_categories or current_sorting != 'None_None' %}
                                 <span class="small"><a href="{% url 'products' %}">Product</a> | </span>
                             {% endif %}
-                            {{ products|length }} Products{% if search_term %} found for <strong>"{{ search_term }}"</strong>{% endif %}
+                            {{ products|length }} {% if products|length == 1 %}Product {% else %} products {% endif %}{% if search_term %} found for <strong>"{{ search_term }}"</strong>{% endif %}
                         </p>
                     </div>
                 </div>
@@ -132,7 +132,8 @@
             </div>
         </div>
     </div>
-    <div class="btt-button shadow-sm border border-black">
+    <!-- Back to top button -->
+    <div class="btt-button shadow-sm">
         <a class="btt-link d-flex h-100">
             <i class="fas fa-arrow-up text-black mx-auto my-auto"></i>
         </a>	
