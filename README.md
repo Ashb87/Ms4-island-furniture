@@ -518,13 +518,14 @@ When I first deployed to Heroku and set the secret key to `SECRET_KEY = os.envir
 - [Code Institute](https://codeinstitute.net/) boutique ado project was used a lot throughout the project to help with functionality across the site.
 - [Youtube](https://www.youtube.com/) was used to help put together my contact model and views.
 These were:
--[B learning club](https://www.youtube.com/watch?v=lSgRWA4PMt4&t=477s)
--[Hacker shack](https://www.youtube.com/watch?v=94ylwr2r3Hs&t=831s)
--[Dennis Ivy](https://www.youtube.com/watch?v=gpTrmDpadZY)
+  - [B learning club](https://www.youtube.com/watch?v=lSgRWA4PMt4&t=477s)
+  - [Hacker shack](https://www.youtube.com/watch?v=94ylwr2r3Hs&t=831s)
+  - [Dennis Ivy](https://www.youtube.com/watch?v=gpTrmDpadZY)
 
 
 ### Acknowledgements
 - The **Mini Feb 2021** team on slack for all the feedback and support given to each other.
+- Sunny Hebbar for all his useful feedback and support he has offered me thoughout the whole course.
 - The Code Institute slack community for all the helpful hints and tips.
 - All the tutors at Code Institute who helped me fix issues along the way. You saved me from a few breakdowns!!
 - Friends and Family who have taken their time to offer advice and feedback duirng the devolopment of my project.
