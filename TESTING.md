@@ -6,6 +6,7 @@
     - [User Stories](#user-stories)
     - [Features Testing](#features)
     - [Responsive Testing](#responsive-testing)
+    - [Lighthouse Testing](#lighthouse-testing)
     - [Code Validators](#code-validators)
     - [Further Testung](#further-testing)
     - [Known Issues and Bugs](#known-issues-and-bugs)
@@ -301,6 +302,35 @@
 - As well as using the chrome dev tools I also tested the site myself across as many different devices that I had access to. Theese included **Iphone xr,** **Iphone 12,** **Ipad mini,**
 **Samsung galaxy tablet,** **Apple macbook air** and a 21.5 inch **Apple imac** These devices gave me a good variation of the most common screen sizes used. The site responded well to each of the different screen sizes and displayed as I intended. On top of this I asked friends and family to test the site on their own devies to get even more feedback with devices I don't have access to. 
 - When I felt the site was close to being complete I used the mockup screenshot generator **am I responsive** to get an image of how how the site responds on different size screens across different devices and have used this image at the top of this README file.
+
+## Lighthouse Testing
+
+To check the performance of the site I ran all the main pages through the lighthouse google chrome dev tool.<br>
+The results can be seen below. 
+
+### Home Page
+<img src="assets/screenshots/lighthouse-home.png" width="400" height="225">
+<br>
+
+### Product Page
+<img src="assets/screenshots/lighthouse-products.png" width="400" height="225">
+<br>
+
+### Product Detail Page
+<img src="assets/screenshots/lighthouse-product-detail.png" width="400" height="225">
+<br>
+
+### Profile Page
+<img src="assets/screenshots/lighthouse-profile.png" width="400" height="225">
+<br>
+
+### Contact Page
+<img src="assets/screenshots/lighthouse-contact.png" width="400" height="225">
+<br>
+
+- Overall I was happy with the results with SEO scoring 100 on every page and Performance overall scoring well other than on my home page. One of the warnings was due to image files being too large. I resized the images and made the files smaller but this didnt seem to change the score when I retested it. 
+- The best practice score had consistent warnings across the pages which read "Includes front end javaScript libraries with known security vulnerabilities" This was highlighted as being an issue with jQuery which is being imported from bootstrap. 
+- On the product and product details page the Accessibility scores are lower than on the other pages. There was a warning that read "background and foreground colors do not have a sufficient contrast ratio" Highlighting the **edit** button that is availible to the admin to edit a product. Although it was highlighted as an issue I believe there is sufficient cotrast ratio and don't think it causes an issue. It also had a warning that read "heading elements are not in a sequentially descending order" This was further highlighted by having h4 elements in the footer and I believe because I have an h4 element in my modal. I believe I have picked the suitable sized headings for their placement with in the site so didnt feel the need to try and change this. 
 
 ## Code Validators
 

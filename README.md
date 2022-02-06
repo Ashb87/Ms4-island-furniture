@@ -531,10 +531,9 @@ These were:
 
 
 ### Acknowledgements
-- The **Mini Feb 20201** team on slack for all the feedback and support given to each other.
+- The **Mini Feb 2021** team on slack for all the feedback and support given to each other.
 - The Code Institute slack community for all the helpful hints and tips.
 - All the tutors at Code Institute who helped me fix issues along the way. You saved me from a few breakdowns!!
-- My mentor Rohit Sharma for helping and giving advice for my third milestone project.
 - Friends and Family who have taken their time to offer advice and feedback duirng the devolopment of my project.
 - [w3schools](https://www.w3schools.com/) for all its useful information in helping to build my project.
 
