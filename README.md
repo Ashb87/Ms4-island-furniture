@@ -43,6 +43,8 @@ For this project I have decided to build an e-commerce site based around my dads
     - [Known Issues and Bugs](#known-issues-and-bugs)
   
   * [Deployment](#deployment)
+
+  * [Notes](#notes)
   
   * [Credits](#credits)
 
@@ -181,7 +183,10 @@ I have created a database schema for the project using [dbdiagram](https://dbdia
 
 Models I have added myself for the project can be found in the products app (ProductReview) and the contact app (Contact).
 
+### Adding Categories and Products
 
+- When I first started building my project I knew that I wanted to use a lot of images of my dads own furniture to make the site. Doing this I knew I would need to manually add in all the categories and products myself as I wasn't going to be using any pre existing databases. With the advice from Code Institute I added only a few items to the categories and products files within my fixtures folder. This was enough to work with and help design the layout of the site to see how the products pages would display. 
+- Once I had deployed the site and installed the postgres database I was then able to add a lot more products and images by using the product management form. This was a great way for me to test all the functionality of adding, editing and deleting products to and from the database. 
 
 ## Features
 
@@ -501,6 +506,11 @@ If you want to save images to your S3 bucket, you will need to do the following;
 1. Go back to the S3 dashboard, and click on your bucket. 
 2. Click “Create Folder”, call it ‘media’ and confirm with the second “Create Folder” button.
 3. When you are in this folder, click “Upload”, then “Add Files” or “Add Folder”, then “Upload”.
+
+## Notes
+
+When I first deployed to Heroku and set the secret key to `SECRET_KEY = os.environ.get('SECRET_KEY', '')` when trying to run the server locally to view the site I would get a message in the terminal telling me I needed to have the secret key in my settings for it to run. After speaking with a tutor she noticed that I had my secret key in my settings and advised that I set it as a variable in my gitpod settings instead so I wouldnt need it displayed in my settings. So I used the django secret key generator to get a new one, added that to the variables in my gitpod settings and deleted the one out of my `seetings.py` to make sure it wasn't being deployed to my github repository. 
+
 
 ## Credits
 
