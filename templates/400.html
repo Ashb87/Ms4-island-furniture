@@ -4,24 +4,22 @@
 {% block content %}
 
 <div class="container-fluid">
-    <div class="row-products">
+    <div class="row mt-5">
         <div class="col text-center pb-1">
-            <h2 class="logo-font">Error 400</h2>
+            <h2 class="heading-text">OOps... Error 400</h2>
         </div>
     </div>
 
-    <div class="container general-container">
+    <div class="container">
         <div class="row">
-            <div class="col">
+            <div class="col mt-2">
                 <p>
-                    Oh, no! We can't let you access this page...
-                    No worries, we have a lot of amazing products and other content on our website that you can check
-                    out.
-                    What would you like to do next?
+                    Sorry! We can't let you access this page...
+                    Don't worry we'll get you back on track with one of these helpful links!
                 </p>
-                <div class="error-page-ctas mt-4">
-                    <a class="cta cta-black mr-2 mb-2 d-inline-block" href="{% url 'products' %}">Shop more</a>
-                    <a class="cta cta-white d-inline-block" href="{% url 'home' %}">Back to homepage</a>
+                <div class="mt-4">
+                    <a class="btn btn-green mb-5 mr-2 d-inline-block" href="{% url 'products' %}">Search Products</a>
+                    <a class="btn btn-green mb-5 d-inline-block" href="{% url 'home' %}">Back to homepage</a>
                 </div>
             </div>
         </div>
